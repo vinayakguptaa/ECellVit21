@@ -1,4 +1,4 @@
-import landingStyles from "../styles/landingStyles.module.css";
+import landingStyles from "../styles/Landing.module.css";
 
 /*Components*/
 import Nav from "./Nav";
@@ -6,7 +6,7 @@ import Social from "./Social";
 import Ecell from "./Ecell";
 
 export default function Landing() {
-  const title = "";
+  const title = "ENTREPRENEURSHIP CELL VIT";
   const links = {};
   const active = true;
 

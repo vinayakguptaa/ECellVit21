@@ -1,0 +1,153 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    min-width: 100vw;
+    width: 100%;
+    min-height: 15vh;
+    height: 80px;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section {
+    min-width: 100vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.social {
+    min-width: 10vw;
+    width: fit-content;
+
+}
+
+.ecell {
+    min-width: 90vw;
+    width: fit-content;
+
+}
+
+/*Nav.js*/
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    position: absolute;
+
+
+}
+
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ecellLogoContainer {
+    position: absolute;
+    min-width: 100px;
+    width: 10%;
+    max-width: 15%;
+    height: inherit;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navItemContainer {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #EAEAEA;
+    margin: 0px 2rem;
+}
+
+.navSubBtn {
+    background: linear-gradient(180deg, #475E60 0%, #384E50 100%);
+    backdrop-filter: blur(200px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 1000px;
+
+    width: 129.49px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Ecell.js*/
+
+.titleContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    background: -webkit-linear-gradient(#5EDBC5, #E5E5E5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titleContainer>div {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 66px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+.titleContainer>p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+/*Social.js*/
+
+.socialLinksContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.socialLink {
+    margin: 2rem;
+}
