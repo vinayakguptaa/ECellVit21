@@ -5,8 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
+
+  background: linear-gradient(180deg, #182424 0%, #273232 52.08%, #092727 100%);
 }
+
 
 .main {
   padding: 5rem 0;

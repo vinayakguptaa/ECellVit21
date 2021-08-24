@@ -1,0 +1,13 @@
+.aboutContainer {
+    height: 100vh;
+}
+
+.sectionA {
+    background: linear-gradient(180deg, rgba(57, 67, 67, 0.7) 0%, rgba(69, 78, 78, 0.7) 100%);
+    backdrop-filter: blur(200px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 29px;
+
+    width: 1180px;
+    height: 108px;
+}
