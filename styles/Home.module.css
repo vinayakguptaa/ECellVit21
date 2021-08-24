@@ -7,6 +7,7 @@
   align-items: center;
   height: fit-content;
 
+  overflow: hidden;
   background: linear-gradient(180deg, #182424 0%, #273232 52.08%, #092727 100%);
 }
 

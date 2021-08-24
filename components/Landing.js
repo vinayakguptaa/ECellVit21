@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import landingStyles from "../styles/Landing.module.css";
 
 /*Components*/
@@ -6,15 +8,39 @@ import Social from "./Social";
 import Ecell from "./Ecell";
 
 export default function Landing() {
-  const title = "ENTREPRENEURSHIP CELL VIT";
+  const [title, setTitle] = useState("ENTREPRENEURSHIP CELL VIT");
+  const [navActive, setNavActive] = useState(true);
+
+  useEffect(() => {
+    addEventListener("resize", () => {
+      if (window.innerWidth < 900) {
+        setTitle("E-CELL");
+        setNavActive(false);
+      } else {
+        setTitle("ENTREPRENEURSHIP CELL VIT");
+        setNavActive(true);
+      }
+    });
+    return () => {
+      addEventListener("resize", () => {
+        if (window.innerWidth < 900) {
+          setTitle("E-CELL");
+          setNavActive(false);
+        } else {
+          setTitle("ENTREPRENEURSHIP CELL VIT");
+          setNavActive(true);
+        }
+      });
+    };
+  }, []);
+
   const links = {};
-  const active = true;
 
   return (
     <>
       <div className={landingStyles.container}>
         <div className={landingStyles.navbar}>
-          <Nav active={active} />
+          <Nav active={navActive} />
         </div>
 
         <div className={landingStyles.section}>
