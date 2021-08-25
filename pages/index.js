@@ -4,6 +4,7 @@ import homeStyles from "../styles/Home.module.css";
 import Landing from "../components/Landing";
 import About from "../components/About";
 import Events from "../components/Events";
+import Team from "../components/Team";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Landing />
       <About />
       <Events />
+      <Team />
     </div>
   );
 }

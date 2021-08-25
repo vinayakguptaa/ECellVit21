@@ -1,31 +1,57 @@
-import React from "react";
+import Image from "next/image";
 import eventStyles from "../styles/Events.module.css";
+import TRY from "../public/logos/ecell-vit-logo.png";
 
 function Event(props) {
- const img = "eimg " + props.fit;
   return (
-    <div className={eventStyles.events}>
-      <div className={eventStyles.imgdesc}>
-        <img className={img} src={props.img} alt={props.name} />
-        <div className={eventStyles.imgOverlay}>
-          <div className={eventStyles.edesc}>{props.desc}</div>
+    <div class={eventStyles.cards_item}>
+      <div class={eventStyles.event_card}>
+        <div class={eventStyles.event_card_image}>
+          <Image className={eventStyles.img} src={props.img} />
+        </div>
+        <div class={eventStyles.card_content}>
+          <h2 class={eventStyles.card_title}>Card Grid Layout</h2>
+          <p class={eventStyles.card_text}>
+            Masquerading as a single event, it is a fusion of visionary
+            activities and insightful sessions that open the realm of networking
+            and broaden the horizon of business in your mind.
+          </p>
         </div>
       </div>
-      <div className={eventStyles.ename}>{props.name}</div>
     </div>
   );
 }
 
 function Events() {
   return (
-    <div className={eventStyles.dFlex && eventStyles.eventContainer}>
-      <Event
-        img="./assets/Logos/esummit.png"
-        fit="fit"
-        name="E-summit"
-        desc="Masquerading as a single event, it is a fusion of visionary activities and insightful sessions that open the realm of networking and broaden the horizon of business in your mind. Nurture your entrepreneurial heart by plunging into our flagship event."
-      />
-      <Event
+    <>
+      <div className={eventStyles.title}>Events</div>
+      <div className={eventStyles.main}>
+        <Event
+          img={TRY}
+          fit="fit"
+          name="E-summit"
+          desc="Masquerading as a single event, it is a fusion of visionary activities and insightful sessions that open the realm of networking and broaden the horizon of business in your mind. Nurture your entrepreneurial heart by plunging into our flagship event."
+        />
+        <Event
+          img={TRY}
+          fit="fit"
+          name="E-summit"
+          desc="Masquerading as a single event, it is a fusion of visionary activities and insightful sessions that open the realm of networking and broaden the horizon of business in your mind. Nurture your entrepreneurial heart by plunging into our flagship event."
+        />
+        <Event
+          img={TRY}
+          fit="fit"
+          name="E-summit"
+          desc="Masquerading as a single event, it is a fusion of visionary activities and insightful sessions that open the realm of networking and broaden the horizon of business in your mind. Nurture your entrepreneurial heart by plunging into our flagship event."
+        />
+        <Event
+          img={TRY}
+          fit="fit"
+          name="E-summit"
+          desc="Masquerading as a single event, it is a fusion of visionary activities and insightful sessions that open the realm of networking and broaden the horizon of business in your mind. Nurture your entrepreneurial heart by plunging into our flagship event."
+        />
+        {/* <Event
         img="./assets/Logos/hackertech.png"
         fit="fit"
         name="HackerTech"
@@ -72,8 +98,9 @@ function Events() {
         fit="fit"
         name="Alumni Talk"
         desc="There's no better teacher than experience and no better preacher than the experienced. Expand the horizons of your knowledge and learn the best ways to deal with obstacles from people who have already been in your shoes in the past."
-      />
-    </div>
+      /> */}
+      </div>
+    </>
   );
 }
 

@@ -1,0 +1,144 @@
+.title {
+    background: -webkit-linear-gradient(#5EDBC5, #E5E5E5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    width: 217px;
+    height: 265px;
+
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.imageItemContainer {
+    width: 201px;
+    height: 186px;
+    left: 8px;
+    top: 8px;
+    border-radius: 8px;
+
+    margin: 12px 0px;
+}
+
+.imageItemContainer:hover {
+    filter: blur(3px);
+}
+
+.imageItem {
+    border-radius: 8px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 188px;
+    height: 51px;
+
+    margin: 2rem 0px;
+}
+
+.boardName {
+    background: -webkit-linear-gradient(#5EDBC5, #E5E5E5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    width: 188px;
+    height: 30px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+    color: #77B7B7;
+
+}
+
+.boardDes {
+    width: fit-content;
+    height: 21px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #EDEDED;
+}
+
+.imageRowsContainer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imageRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.offsetImage {
+    margin-top: 4rem;
+}
+
+@media (max-width:700px) {
+    .imageRow {
+        justify-content: space-evenly;
+        align-items: center;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .offsetImage {
+        /* margin-top: 0; */
+        margin: 1rem;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    .imageRow {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .offsetImage {
+        margin-top: 0;
+    }
+}
