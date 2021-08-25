@@ -1,3 +1,7 @@
+import Image from "next/image";
+
+import galleryStyles from "../styles/Gallery.module.css";
+
 import React, { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import { useEmblaCarousel } from "embla-carousel/react";
@@ -5,11 +9,15 @@ import { mediaByIndex } from "../public/galleryImages";
 
 const PARALLAX_FACTOR = 1.2;
 
-const EmblaCarousel = ({ slides }) => {
+const EmblaCarousel = () => {
+  const SLIDE_COUNT = 6;
+  const slides = Array.from(Array(SLIDE_COUNT).keys());
+
   const [viewportRef, embla] = useEmblaCarousel({
     loop: false,
     dragFree: true,
   });
+
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
   const [parallaxValues, setParallaxValues] = useState([]);
@@ -58,20 +66,19 @@ const EmblaCarousel = ({ slides }) => {
   }, [embla, onSelect, onScroll]);
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={viewportRef}>
-        <div className="embla__container">
+    <div className={galleryStyles.embla}>
+      <div className={galleryStyles.embla__viewport} ref={viewportRef}>
+        <div className={galleryStyles.embla__container}>
           {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__inner">
+            <div className={galleryStyles.embla__slide} key={index}>
+              <div className={galleryStyles.embla__slide__inner}>
                 <div
-                  className="embla__slide__parallax"
+                  className={galleryStyles.embla__slide__parallax}
                   style={{ transform: `translateX(${parallaxValues[index]}%)` }}
                 >
-                  <img
-                    className="embla__slide__img"
+                  <Image
+                    className={galleryStyles.embla__slide__img}
                     src={mediaByIndex(index)}
-                    alt="A cool cat."
                   />
                 </div>
               </div>
@@ -79,8 +86,8 @@ const EmblaCarousel = ({ slides }) => {
           ))}
         </div>
       </div>
-      <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+      {/* <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} /> */}
     </div>
   );
 };
