@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 
 import landingStyles from "../styles/Landing.module.css";
 
+/*Icons*/
+import instagram from "../public/icons/instagram.svg";
+import linkedin from "../public/icons/linkedin.svg";
+
 /*Components*/
 import Nav from "./Nav";
 import Social from "./Social";
