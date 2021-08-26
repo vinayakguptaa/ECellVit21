@@ -4,14 +4,14 @@ import TRY from "../public/logos/ecell-vit-logo.png";
 
 function Event(props) {
   return (
-    <div class={eventStyles.cards_item}>
-      <div class={eventStyles.event_card}>
-        <div class={eventStyles.event_card_image}>
-          <Image className={eventStyles.img} src={props.img} />
+    <div className={eventStyles.cards_item}>
+      <div className={eventStyles.event_card}>
+        <div className={eventStyles.event_card_image}>
+          <Image className={eventStyles.img} src={props.img} alt="event" />
         </div>
-        <div class={eventStyles.card_content}>
-          <h2 class={eventStyles.card_title}>Card Grid Layout</h2>
-          <p class={eventStyles.card_text}>
+        <div className={eventStyles.card_content}>
+          <h2 className={eventStyles.card_title}>Card Grid Layout</h2>
+          <p className={eventStyles.card_text}>
             Masquerading as a single event, it is a fusion of visionary
             activities and insightful sessions that open the realm of networking
             and broaden the horizon of business in your mind.

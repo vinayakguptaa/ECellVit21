@@ -4,6 +4,10 @@ import TeamStyles from "../styles/Team.module.css";
 
 import Image from "next/image";
 
+/*Icons*/
+import instagram from "../public/icons/instagram.svg";
+import linkedin from "../public/icons/linkedin.svg";
+
 /*Board Images*/
 import Namrata from "../public/images/Namrata.jpg";
 import Nipun from "../public/images/Nipun.jpg";
@@ -27,17 +31,25 @@ function Board(props) {
 
   return (
     <div
-      className={TeamStyles.imageContainer}
-      className={offsetClass}
+      className={`${TeamStyles.imageContainer} ${offsetClass}`}
       style={{ order: props.order }}
     >
       <div className={TeamStyles.imageItemContainer}>
-        <div className={TeamStyles.imageItemOverlay}></div>
-        <Image
-          src={props.image}
-          alt={props.name + ", " + props.designation}
-          className={TeamStyles.imageItem}
-        />
+        <div className={TeamStyles.imageItem}>
+          <Image
+            src={props.image}
+            alt={props.name + ", " + props.designation}
+          />
+        </div>
+
+        <div className={TeamStyles.imageItemOverlay}>
+          <div className={TeamStyles.imageItemOverlayItem}>
+            <Image src={instagram} alt="instagram" />
+          </div>
+          <div className={TeamStyles.imageItemOverlayItem}>
+            <Image src={linkedin} alt="linkedin" />
+          </div>
+        </div>
       </div>
       <div className={TeamStyles.infoContainer}>
         <div className={TeamStyles.boardName}>{props.name}</div>
@@ -85,7 +97,7 @@ export default function Team() {
 
           <Board
             image={Namrata}
-            name="Namrat Singhal"
+            name="Namrata Singhal"
             designation="Managing Director"
             offset={false}
             order={order.two}
@@ -174,7 +186,10 @@ export default function Team() {
             order={order.three}
           />
         </div>
-        <div className={TeamStyles.imageRow}>
+        <div
+          className={TeamStyles.imageRow}
+          style={{ justifyContent: "center" }}
+        >
           <Board
             image={Vinayak}
             name="Vinayak Gupta"
