@@ -38,7 +38,7 @@ export default function Landing() {
 
   return (
     <>
-      <div className={landingStyles.container}>
+      <div className={landingStyles.container} id="home">
         <div className={landingStyles.navbar}>
           <Nav active={navActive} />
         </div>

@@ -8,16 +8,24 @@ function NavItems(props) {
     return (
       <>
         <div className={landingStyles.navItemContainer}>
-          <div className={landingStyles.navItem}>Home</div>
+          <div className={landingStyles.navItem}>
+            <a href="#about">About Us</a>
+          </div>
         </div>
         <div className={landingStyles.navItemContainer}>
-          <div className={landingStyles.navItem}>About Us</div>
+          <div className={landingStyles.navItem}>
+            <a href="#events">Events</a>
+          </div>
         </div>
         <div className={landingStyles.navItemContainer}>
-          <div className={landingStyles.navItem}>Our Team</div>
+          <div className={landingStyles.navItem}>
+            <a href="#team">Our Team</a>
+          </div>
         </div>
         <div className={landingStyles.navItemContainer}>
-          <div className={landingStyles.navItem}>Gallery</div>
+          <div className={landingStyles.navItem}>
+            <a href="#gallery">Gallery</a>
+          </div>
         </div>
       </>
     );

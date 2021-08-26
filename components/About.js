@@ -3,7 +3,7 @@ import AboutStyles from "../styles/About.module.css";
 export default function About() {
   return (
     <>
-      <div className={AboutStyles.aboutContainer}>
+      <div className={AboutStyles.aboutContainer} id="about">
         <div className={AboutStyles.sectionA}>
           <div className={AboutStyles.statsContainer}>
             <div className={AboutStyles.statNum}>5000+</div>

@@ -66,7 +66,7 @@ const EmblaCarousel = () => {
   }, [embla, onSelect, onScroll]);
 
   return (
-    <div className={galleryStyles.embla}>
+    <div className={galleryStyles.embla} id="gallery">
       <div className={galleryStyles.embla__viewport} ref={viewportRef}>
         <div className={galleryStyles.embla__container}>
           {slides.map((index) => (

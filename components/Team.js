@@ -26,13 +26,14 @@ import Vinayak from "../public/images/Vinayak.jpg";
 function Board(props) {
   let offsetClass = null;
   if (props.offset) {
-    offsetClass = TeamStyles.offsetImage;
+    offsetClass = "TeamStyles.offsetImage";
   }
 
   return (
     <div
-      className={`${TeamStyles.imageContainer} ${offsetClass}`}
+      className={TeamStyles.imageContainer}
       style={{ order: props.order }}
+      className={offsetClass}
     >
       <div className={TeamStyles.imageItemContainer}>
         <div className={TeamStyles.imageItem}>
@@ -82,8 +83,10 @@ export default function Team() {
   }, []);
 
   return (
-    <>
-      <div className={TeamStyles.title}>Our Team</div>
+    <div className={TeamStyles.teamContainer} id="team">
+      <div className={TeamStyles.title}>
+        <a href="#home">Our Team</a>
+      </div>
 
       <div className={TeamStyles.imageRowsContainer}>
         <div className={TeamStyles.imageRow}>
@@ -199,6 +202,6 @@ export default function Team() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }
