@@ -1,29 +1,49 @@
-import Image from "next/image";
+import React, { useState, useEffect, useCallback } from "react";
+
+import { useEmblaCarousel } from "embla-carousel/react";
+
+import Image from "next/Image";
+
+import { useRecursiveTimeout } from "./useRecursiveTimeout";
+
+import { mediaByIndex } from "../public/galleryImages/index.js";
 
 import galleryStyles from "../styles/Gallery.module.css";
 
-import React, { useState, useEffect, useCallback } from "react";
-import { PrevButton, NextButton } from "./EmblaCarouselButtons";
-import { useEmblaCarousel } from "embla-carousel/react";
-import { mediaByIndex } from "../public/galleryImages";
+const AUTOPLAY_INTERVAL = 4000;
 
-const PARALLAX_FACTOR = 1.2;
-
-const EmblaCarousel = () => {
+export default function Gallery() {
   const SLIDE_COUNT = 6;
   const slides = Array.from(Array(SLIDE_COUNT).keys());
 
-  const [viewportRef, embla] = useEmblaCarousel({
-    loop: false,
-    dragFree: true,
-  });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
+  const [viewportRef, embla] = useEmblaCarousel({ skipSnaps: false });
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
-  const [parallaxValues, setParallaxValues] = useState([]);
 
-  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+  const autoplay = useCallback(() => {
+    if (!embla) return;
+    if (embla.canScrollNext()) {
+      embla.scrollNext();
+    } else {
+      embla.scrollTo(0);
+    }
+  }, [embla]);
+
+  const { play, stop } = useRecursiveTimeout(autoplay, AUTOPLAY_INTERVAL);
+
+  const scrollNext = useCallback(() => {
+    if (!embla) return;
+    embla.scrollNext();
+    stop();
+  }, [embla, stop]);
+
+  const scrollPrev = useCallback(() => {
+    if (!embla) return;
+    embla.scrollPrev();
+    stop();
+  }, [embla, stop]);
 
   const onSelect = useCallback(() => {
     if (!embla) return;
@@ -31,66 +51,37 @@ const EmblaCarousel = () => {
     setNextBtnEnabled(embla.canScrollNext());
   }, [embla]);
 
-  const onScroll = useCallback(() => {
-    if (!embla) return;
-
-    const engine = embla.dangerouslyGetEngine();
-    const scrollProgress = embla.scrollProgress();
-
-    const styles = embla.scrollSnapList().map((scrollSnap, index) => {
-      if (!embla.slidesInView().includes(index)) return 0;
-      let diffToTarget = scrollSnap - scrollProgress;
-
-      if (engine.options.loop) {
-        engine.slideLooper.loopPoints.forEach((loopItem) => {
-          const target = loopItem.getTarget();
-          if (index === loopItem.index && target !== 0) {
-            const sign = Math.sign(target);
-            if (sign === -1) diffToTarget = scrollSnap - (1 + scrollProgress);
-            if (sign === 1) diffToTarget = scrollSnap + (1 - scrollProgress);
-          }
-        });
-      }
-      return diffToTarget * (-1 / PARALLAX_FACTOR) * 100;
-    });
-    setParallaxValues(styles);
-  }, [embla, setParallaxValues]);
-
   useEffect(() => {
     if (!embla) return;
     onSelect();
-    onScroll();
     embla.on("select", onSelect);
-    embla.on("scroll", onScroll);
-    embla.on("resize", onScroll);
-  }, [embla, onSelect, onScroll]);
+    embla.on("pointerDown", stop);
+  }, [embla, onSelect, stop]);
+
+  useEffect(() => {
+    play();
+  }, [play]);
 
   return (
-    <div className={galleryStyles.embla} id="gallery">
-      <div className={galleryStyles.embla__viewport} ref={viewportRef}>
-        <div className={galleryStyles.embla__container}>
-          {slides.map((index) => (
-            <div className={galleryStyles.embla__slide} key={index}>
-              <div className={galleryStyles.embla__slide__inner}>
-                <div
-                  className={galleryStyles.embla__slide__parallax}
-                  style={{ transform: `translateX(${parallaxValues[index]}%)` }}
-                >
+    <div className={galleryStyles.container} id="gallery">
+      <div className={galleryStyles.title}>Gallery</div>
+
+      <div className={galleryStyles.embla}>
+        <div className={galleryStyles.embla__viewport} ref={viewportRef}>
+          <div className={galleryStyles.embla__container}>
+            {slides.map((index) => (
+              <div className={galleryStyles.embla__slide} key={index}>
+                <div className={galleryStyles.embla__slide__inner}>
                   <Image
                     className={galleryStyles.embla__slide__img}
                     src={mediaByIndex(index)}
-                    alt="hello"
                   />
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-      {/* <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} /> */}
     </div>
   );
-};
-
-export default EmblaCarousel;
+}

@@ -12,7 +12,7 @@ export default function Landing() {
   const [navActive, setNavActive] = useState(true);
 
   useEffect(() => {
-    addEventListener("resize", () => {
+    function resize() {
       if (window.innerWidth < 900) {
         setTitle("E-CELL");
         setNavActive(false);
@@ -20,17 +20,11 @@ export default function Landing() {
         setTitle("ENTREPRENEURSHIP CELL VIT");
         setNavActive(true);
       }
-    });
+    }
+
+    addEventListener("resize", resize());
     return () => {
-      addEventListener("resize", () => {
-        if (window.innerWidth < 900) {
-          setTitle("E-CELL");
-          setNavActive(false);
-        } else {
-          setTitle("ENTREPRENEURSHIP CELL VIT");
-          setNavActive(true);
-        }
-      });
+      addEventListener("resize", resize());
     };
   }, []);
 
