@@ -13,12 +13,20 @@ export default function Social() {
     <>
       <div className={landingStyles.socialLinksContainer}>
         <div className={landingStyles.socialLink}>
-          <a href="https://www.facebook.com/ecellvit" target="_blank">
+          <a
+            href="https://www.facebook.com/ecellvit"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image src={facebook} alt="facebook" />
           </a>
         </div>
         <div className={landingStyles.socialLink}>
-          <a href="https://www.instagram.com/ecell_vit" target="_blank">
+          <a
+            href="https://www.instagram.com/ecell_vit"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image src={instagram} alt="instagram" />
           </a>
         </div>
@@ -26,12 +34,17 @@ export default function Social() {
           <a
             href="https://www.linkedin.com/company/ecellvitvellore"
             target="_blank"
+            rel="noreferrer"
           >
             <Image src={linkedin} alt="linkedin" />
           </a>
         </div>
         <div className={landingStyles.socialLink}>
-          <a href="https://twitter.com/ecell_vit" target="_blank">
+          <a
+            href="https://twitter.com/ecell_vit"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image src={twitter} alt="twitter" />
           </a>
         </div>

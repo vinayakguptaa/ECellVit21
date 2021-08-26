@@ -75,6 +75,7 @@ export default function Gallery() {
                   <Image
                     className={galleryStyles.embla__slide__img}
                     src={mediaByIndex(index)}
+                    alt="Gallery"
                   />
                 </div>
               </div>
