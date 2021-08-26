@@ -1,5 +1,7 @@
 .aboutContainer {
     min-height: 100vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -9,6 +11,7 @@
 
 .sectionA {
     background: linear-gradient(180deg, rgba(57, 67, 67, 0.7) 0%, rgba(69, 78, 78, 0.7) 100%);
+    -webkit-backdrop-filter: blur(200px);
     backdrop-filter: blur(200px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 29px;
@@ -16,6 +19,8 @@
     width: 95vw;
     max-width: 1180px;
     min-height: 108px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: 2rem 0;
 
@@ -54,6 +59,8 @@
     width: 95vw;
     max-width: 1180px;
     min-height: 108px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: 2rem 0;
 

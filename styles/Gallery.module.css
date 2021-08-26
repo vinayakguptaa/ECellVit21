@@ -31,6 +31,8 @@
     padding: 1rem;
     min-width: 70%;
     max-width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     max-height: 90vh;
 
@@ -48,15 +50,20 @@
 
 .embla__viewport.is-draggable {
     cursor: move;
+    cursor: -webkit-grab;
     cursor: grab;
 }
 
 .embla__viewport.is-dragging {
+    cursor: -webkit-grabbing;
     cursor: grabbing;
 }
 
 .embla__container {
     display: flex;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
     -khtml-user-select: none;
@@ -142,6 +149,8 @@
         position: relative;
         padding: 0;
         width: 120vh;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         max-height: 90vh;
 

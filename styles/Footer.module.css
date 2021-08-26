@@ -5,9 +5,11 @@
   width: 100vw;
   align-items: center;
 }
+
 .ecell_logo {
   width: 14vw;
 }
+
 .smallContainer {
   display: flex;
   flex-direction: column;
