@@ -15,6 +15,7 @@
   letter-spacing: 0.05em;
   text-transform: capitalize;
 }
+
 .main {
   max-width: 1200px;
   margin: 0 auto;
@@ -55,14 +56,27 @@
   }
 }
 
+
 .event_card {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   overflow: hidden;
   background: #394343;
+
+}
+
+.event_card_image {
+  width: 180px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
 
 .card_content {
@@ -70,20 +84,32 @@
 }
 
 .card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
+  background: -webkit-linear-gradient(#5EDBC5, #E5E5E5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19.8191px;
+  line-height: 30px;
   text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
 }
 
 .card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-  font-weight: 400;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  /* or 22px */
+
   text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+
+  color: #EAEAEA;
 }

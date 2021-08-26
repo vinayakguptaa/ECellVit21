@@ -29,11 +29,15 @@ function Board(props) {
     offsetClass = "TeamStyles.offsetImage";
   }
 
+  const style = {
+    one: "TeamStyles.imageContainer",
+    two: offsetClass,
+  };
+
   return (
     <div
-      className={TeamStyles.imageContainer}
+      className={style["one"] + " " + style["two"]}
       style={{ order: props.order }}
-      className={offsetClass}
     >
       <div className={TeamStyles.imageItemContainer}>
         <div className={TeamStyles.imageItem}>
