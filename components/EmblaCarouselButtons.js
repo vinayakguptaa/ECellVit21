@@ -2,8 +2,7 @@ import galleryStyles from "../styles/Gallery.module.css";
 
 export const PrevButton = ({ enabled, onClick }) => (
   <button
-    className={galleryStyles.embla__button}
-    className={galleryStyles.embla__button__prev}
+    className={`${galleryStyles.embla__button} ${galleryStyles.embla__button__prev}`}
     onClick={onClick}
     disabled={!enabled}
   >
@@ -18,8 +17,7 @@ export const PrevButton = ({ enabled, onClick }) => (
 
 export const NextButton = ({ enabled, onClick }) => (
   <button
-    className={galleryStyles.embla__button}
-    className={galleryStyles.embla__button__next}
+    className={`${galleryStyles.embla__button} ${galleryStyles.embla__button__prev}`}
     onClick={onClick}
     disabled={!enabled}
   >

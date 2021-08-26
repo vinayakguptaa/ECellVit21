@@ -79,6 +79,7 @@ const EmblaCarousel = () => {
                   <Image
                     className={galleryStyles.embla__slide__img}
                     src={mediaByIndex(index)}
+                    alt="hello"
                   />
                 </div>
               </div>
