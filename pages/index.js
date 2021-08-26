@@ -10,13 +10,15 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className={homeStyles.container}>
-      <Landing />
-      <About />
-      <Events />
-      <Team />
-      <Gallery />
-      <Footer />
-    </div>
+    <>
+      <div className={homeStyles.container}>
+        <Landing />
+        <About />
+        <Events />
+        <Team />
+        <Gallery />
+        <Footer />
+      </div>
+    </>
   );
 }
