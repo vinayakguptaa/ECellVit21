@@ -31,7 +31,8 @@ function Board(props) {
 
   return (
     <div
-      className={`${TeamStyles.imageContainer} ${offsetClass}`}
+      className={TeamStyles.imageContainer}
+      className={offsetClass}
       style={{ order: props.order }}
     >
       <div className={TeamStyles.imageItemContainer}>
