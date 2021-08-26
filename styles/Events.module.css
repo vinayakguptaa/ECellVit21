@@ -25,12 +25,6 @@
   padding: 0;
 }
 
-.img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -71,16 +65,17 @@
 }
 
 .event_card_image {
-  width: 180px;
+  width: 220px;
   height: 150px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .card_content {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .card_title {

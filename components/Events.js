@@ -15,10 +15,10 @@ function Event(props) {
     <div className={eventStyles.cards_item}>
       <div className={eventStyles.event_card}>
         <div className={eventStyles.event_card_image}>
-          <Image className={eventStyles.img} src={props.img} alt="event" />
+          <Image src={props.img} alt="event" layout="intrinsic" />
         </div>
+        <h2 className={eventStyles.card_title}>{props.name}</h2>
         <div className={eventStyles.card_content}>
-          <h2 className={eventStyles.card_title}>{props.name}</h2>
           <p className={eventStyles.card_text}>{props.desc}</p>
         </div>
       </div>

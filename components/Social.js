@@ -13,16 +13,27 @@ export default function Social() {
     <>
       <div className={landingStyles.socialLinksContainer}>
         <div className={landingStyles.socialLink}>
-          <Image src={facebook} alt="facebook" />
+          <a href="https://www.facebook.com/ecellvit" target="_blank">
+            <Image src={facebook} alt="facebook" />
+          </a>
         </div>
         <div className={landingStyles.socialLink}>
-          <Image src={instagram} alt="instagram" />
+          <a href="https://www.instagram.com/ecell_vit" target="_blank">
+            <Image src={instagram} alt="instagram" />
+          </a>
         </div>
         <div className={landingStyles.socialLink}>
-          <Image src={linkedin} alt="linkedin" />
+          <a
+            href="https://www.linkedin.com/company/ecellvitvellore"
+            target="_blank"
+          >
+            <Image src={linkedin} alt="linkedin" />
+          </a>
         </div>
         <div className={landingStyles.socialLink}>
-          <Image src={twitter} alt="twitter" />
+          <a href="https://twitter.com/ecell_vit" target="_blank">
+            <Image src={twitter} alt="twitter" />
+          </a>
         </div>
       </div>
     </>
