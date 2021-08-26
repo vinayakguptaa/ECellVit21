@@ -10,11 +10,9 @@ function Event(props) {
           <Image className={eventStyles.img} src={props.img} alt="event" />
         </div>
         <div className={eventStyles.card_content}>
-          <h2 className={eventStyles.card_title}>Card Grid Layout</h2>
+          <h2 className={eventStyles.card_title}>{props.name}</h2>
           <p className={eventStyles.card_text}>
-            Masquerading as a single event, it is a fusion of visionary
-            activities and insightful sessions that open the realm of networking
-            and broaden the horizon of business in your mind.
+            {props.desc}
           </p>
         </div>
       </div>

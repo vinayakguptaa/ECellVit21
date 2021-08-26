@@ -8,6 +8,8 @@ import instagram from "../public/icons/instagram.svg";
 import linkedin from "../public/icons/linkedin.svg";
 import twitter from "../public/icons/twitter.svg";
 import Logo from "../public/logos/ecell-vit-logo.png";
+import mail from "../public/icons/mail.svg";
+import phone from "../public/icons/phone.svg";
 
 function FooterSocial() {
   return (
@@ -39,11 +41,11 @@ export default function Footer() {
         </div>
         <h2>IDEATE. INNOVATE. ACTUATE</h2>
         <div className={footerstyles.contact}>
-          <Image src={twitter} alt="twitter" />
+          <Image src={mail} alt="twitter" />
           <a href="mailto:helloecellvit@gmail.com">helloecellvit@gmail.com</a>
         </div>
         <div className={footerstyles.contact}>
-          <Image src={twitter} alt="twitter" />
+          <Image src={phone} alt="twitter" />
           <a href="tel:+918293622180">+918293622180</a>
         </div>
         <div className={footerstyles.social}>
