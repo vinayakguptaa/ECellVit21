@@ -25,8 +25,10 @@ import Vinayak from "../public/images/Vinayak.jpg";
 
 function Board(props) {
   let offsetClass = null;
+  let offset = "0rem";
   if (props.offset) {
     offsetClass = "TeamStyles.offsetImage";
+    offset = "0rem";
   }
 
   const style = {
@@ -37,7 +39,7 @@ function Board(props) {
   return (
     <div
       className={style["one"] + " " + style["two"]}
-      style={{ order: props.order }}
+      style={{ order: props.order, transform: `translateY(${offset})` }}
     >
       <div className={TeamStyles.imageItemContainer}>
         <div className={TeamStyles.imageItem}>
@@ -65,7 +67,7 @@ function Board(props) {
 }
 
 export default function Team() {
-  const [order, setOrder] = useState({ one: 1, two: 2, three: 3 });
+  const [order, setOrder] = useState({ one: 1, two: 2, three: 3, four: 4 });
 
   useEffect(() => {
     addEventListener("resize", () => {
@@ -78,9 +80,9 @@ export default function Team() {
     return () => {
       addEventListener("resize", () => {
         if (window.innerWidth < 900) {
-          setOrder({ one: 2, two: 1, three: 3 });
+          setOrder({ one: 2, two: 1, three: 3, four: 4 });
         } else {
-          setOrder({ one: 1, two: 2, three: 3 });
+          setOrder({ one: 1, two: 2, three: 3, four: 4 });
         }
       });
     };
@@ -95,19 +97,20 @@ export default function Team() {
       <div className={TeamStyles.imageRowsContainer}>
         <div className={TeamStyles.imageRow}>
           <Board
-            image={Nipun}
-            name="Nipun Mahajan"
-            designation="Deputy Managing Director"
-            offset={true}
-            order={order.one}
-          />
-
-          <Board
             image={Namrata}
             name="Namrata Singhal"
             designation="Managing Director"
             offset={false}
             order={order.two}
+          />
+        </div>
+        <div className={TeamStyles.imageRow}>
+          <Board
+            image={Nipun}
+            name="Nipun Mahajan"
+            designation="Deputy Managing Director"
+            offset={true}
+            order={order.one}
           />
 
           <Board
@@ -192,17 +195,12 @@ export default function Team() {
             offset={true}
             order={order.three}
           />
-        </div>
-        <div
-          className={TeamStyles.imageRow}
-          style={{ justifyContent: "center" }}
-        >
           <Board
             image={Vinayak}
             name="Vinayak Gupta"
             designation="Director Of Technology"
             offset={false}
-            order={order.two}
+            order={order.four}
           />
         </div>
       </div>

@@ -12,19 +12,44 @@ export default function Landing() {
   const [navActive, setNavActive] = useState(true);
 
   useEffect(() => {
-    function resize() {
-      if (window.innerWidth < 900) {
+    addEventListener("resize", () => {
+      if (window.innerWidth < 1000) {
         setTitle("E-CELL");
         setNavActive(false);
       } else {
         setTitle("ENTREPRENEURSHIP CELL VIT");
         setNavActive(true);
       }
-    }
+    });
+    addEventListener("load", () => {
+      if (window.innerWidth < 1000) {
+        setTitle("E-CELL");
+        setNavActive(false);
+      } else {
+        setTitle("ENTREPRENEURSHIP CELL VIT");
+        setNavActive(true);
+      }
+    });
 
-    addEventListener("resize", resize());
     return () => {
-      addEventListener("resize", resize());
+      addEventListener("resize", () => {
+        if (window.innerWidth < 1000) {
+          setTitle("E-CELL");
+          setNavActive(false);
+        } else {
+          setTitle("ENTREPRENEURSHIP CELL VIT");
+          setNavActive(true);
+        }
+      });
+      addEventListener("load", () => {
+        if (window.innerWidth < 1000) {
+          setTitle("E-CELL");
+          setNavActive(false);
+        } else {
+          setTitle("ENTREPRENEURSHIP CELL VIT");
+          setNavActive(true);
+        }
+      });
     };
   }, []);
 

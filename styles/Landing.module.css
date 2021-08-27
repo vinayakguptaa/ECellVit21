@@ -33,7 +33,6 @@
 .social {
     min-width: 10vw;
     width: fit-content;
-
 }
 
 .ecell {
@@ -120,6 +119,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    transform: translateX(-5vw);
 }
 
 .titleContainer>div {
@@ -166,5 +166,9 @@
 @media (max-width:900px) {
     .socialLinksContainer {
         flex-direction: row;
+    }
+
+    .titleContainer {
+        transform: translateX(0);
     }
 }
