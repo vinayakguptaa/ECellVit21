@@ -52,7 +52,7 @@ export default function Nav(props) {
           <div className={landingStyles.navItemContainer}>
             <div className={landingStyles.navSubBtn}>
               <div className={landingStyles.navItem}>
-                {/* <a href="javascript:;" onClick="ml_webform_4496056('show')"> */}
+                {/* <a href="javascript:;" onClick={ml_webform_4496056("show")}> */}
                 Subscribe
                 {/* </a> */}
               </div>

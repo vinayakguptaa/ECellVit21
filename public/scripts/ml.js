@@ -1,4 +1,3 @@
-console.log("yo");
 (function (m, a, i, l, e, r) {
   m["MailerLiteObject"] = e;
   function f() {
@@ -23,3 +22,6 @@ console.log("yo");
 );
 
 var ml_account = ml("accounts", "3319915", "a8u7f2p5f6", "load");
+
+var ml_webform_4496056 = ml_account("webforms", "4496056", "k2q3g9", "load");
+ml_webform_4496056("animation", "fadeIn");
