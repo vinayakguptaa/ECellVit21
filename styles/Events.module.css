@@ -1,4 +1,6 @@
 .title {
+  color: #5edbc5;
+
   background: -webkit-linear-gradient(#5edbc5, #e5e5e5);
   background-clip: text;
   -webkit-background-clip: text;
@@ -53,7 +55,6 @@
     width: 33.3333%;
   }
 }
-
 
 .event_card {
   background-color: white;
