@@ -113,6 +113,7 @@
     align-items: center;
     flex-direction: column;
 
+    color: #5EDBC5;
 
     background: -webkit-linear-gradient(#5EDBC5, #E5E5E5);
     background-clip: text;
