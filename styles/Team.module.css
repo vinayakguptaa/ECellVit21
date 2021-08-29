@@ -113,6 +113,7 @@
     height: 51px;
 
     margin: 0 0 2rem 0px;
+    transform: translateY(-1rem);
 }
 
 .boardName {
@@ -121,7 +122,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    width: 188px;
+    width: 200px;
     height: 30px;
 
     font-family: Poppins;
