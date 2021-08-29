@@ -5,6 +5,7 @@ import { useEmblaCarousel } from "embla-carousel/react";
 import Image from "next/image";
 
 import { useRecursiveTimeout } from "./useRecursiveTimeout";
+import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 
 import { mediaByIndex } from "../public/galleryImages/index.js";
 
@@ -83,6 +84,8 @@ export default function Gallery() {
           </div>
         </div>
       </div>
+      <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
     </div>
   );
 }
