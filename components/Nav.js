@@ -83,13 +83,13 @@ export default function Nav(props) {
         <div className={landingStyles.navbarContainer}>
           <NavItems active={props.active} />
 
-          <div className={landingStyles.navItemContainer}>
+          {/* <div className={landingStyles.navItemContainer}>
             <div className={landingStyles.navItem}>
               <div className={landingStyles.navSubBtn} onClick={mlPopUp}>
                 Subscribe
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -5,7 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -24,7 +26,11 @@
 .contactContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .contact {
@@ -34,16 +40,17 @@
   font-size: 20px;
   line-height: 160%;
   /* identical to box height, or 32px */
-
   letter-spacing: 0.03em;
-
   color: #EAEAEA;
-
   margin: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact>a {
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 .social {
@@ -73,4 +80,63 @@
   margin: 1rem;
 }
 
-@media (max-width: 900px) {}
+@media (max-width: 1100px) {
+  .smallContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .contactContainer {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 700px) {
+  .contactContainer {
+    transform: scale(1);
+  }
+
+  .smallContainer {
+    justify-content: space-between;
+  }
+
+  .ecell_logo {
+    display: none;
+  }
+
+  .contact {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: auto;
+    margin: 0;
+  }
+
+  .contactImage {
+    width: 20px;
+    margin: 0;
+  }
+
+
+  .socialLink {
+    margin: 8px 0;
+  }
+
+  .social {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact>a {
+    margin: 6px;
+  }
+}

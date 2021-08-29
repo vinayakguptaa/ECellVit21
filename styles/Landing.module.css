@@ -32,11 +32,15 @@
 
 .social {
     min-width: 10vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
 .ecell {
     min-width: 90vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 
 }
@@ -90,6 +94,7 @@
 
 .navSubBtn {
     background: linear-gradient(180deg, #475E60 0%, #384E50 100%);
+    -webkit-backdrop-filter: blur(200px);
     backdrop-filter: blur(200px);
     /* Note: backdrop-filter has minimal browser support */
 
@@ -169,6 +174,10 @@
 @media (max-width:900px) {
     .socialLinksContainer {
         flex-direction: row;
+    }
+
+    .socialLink {
+        margin: 1.5rem;
     }
 }
 

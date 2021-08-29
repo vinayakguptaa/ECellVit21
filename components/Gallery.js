@@ -64,28 +64,31 @@ export default function Gallery() {
   }, [play]);
 
   return (
-    <div className={galleryStyles.container} id="gallery">
-      <div className={galleryStyles.title}>Gallery</div>
-
-      <div className={galleryStyles.embla}>
-        <div className={galleryStyles.embla__viewport} ref={viewportRef}>
-          <div className={galleryStyles.embla__container}>
-            {slides.map((index) => (
-              <div className={galleryStyles.embla__slide} key={index}>
-                <div className={galleryStyles.embla__slide__inner}>
-                  <Image
-                    className={galleryStyles.embla__slide__img}
-                    src={mediaByIndex(index)}
-                    alt="Gallery"
-                  />
+    <div className={galleryStyles.mainContainer}>
+      <div className={galleryStyles.title} id="gallery">
+        Gallery
+      </div>
+      <div className={galleryStyles.container}>
+        <div className={galleryStyles.embla}>
+          <div className={galleryStyles.embla__viewport} ref={viewportRef}>
+            <div className={galleryStyles.embla__container}>
+              {slides.map((index) => (
+                <div className={galleryStyles.embla__slide} key={index}>
+                  <div className={galleryStyles.embla__slide__inner}>
+                    <Image
+                      className={galleryStyles.embla__slide__img}
+                      src={mediaByIndex(index)}
+                      alt="Gallery"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
+        <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+        <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
       </div>
-      <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
     </div>
   );
 }

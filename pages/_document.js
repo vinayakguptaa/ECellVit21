@@ -8,9 +8,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <script async src="/scripts/ml.js"></script>
-        </Head>
+        <Head>{/* <script async src="/scripts/ml.js"></script> */}</Head>
         <body>
           <Main />
           <NextScript />

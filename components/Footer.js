@@ -21,6 +21,7 @@ function FooterSocial() {
               href="https://www.facebook.com/ecellvit"
               target="_blank"
               rel="noreferrer"
+              className={footerstyles.socialLinkIcon}
             >
               <Image src={facebook} alt="facebook" />
             </a>
@@ -30,6 +31,7 @@ function FooterSocial() {
               href="https://www.instagram.com/ecell_vit"
               target="_blank"
               rel="noreferrer"
+              className={footerstyles.socialLinkIcon}
             >
               <Image src={instagram} alt="instagram" />
             </a>
@@ -41,6 +43,7 @@ function FooterSocial() {
               href="https://www.linkedin.com/company/ecellvitvellore"
               target="_blank"
               rel="noreferrer"
+              className={footerstyles.socialLinkIcon}
             >
               <Image src={linkedin} alt="linkedin" />
             </a>
@@ -50,6 +53,7 @@ function FooterSocial() {
               href="https://twitter.com/ecell_vit"
               target="_blank"
               rel="noreferrer"
+              className={footerstyles.socialLinkIcon}
             >
               <Image src={twitter} alt="twitter" />
             </a>
@@ -69,11 +73,15 @@ export default function Footer() {
         </div>
         <div className={footerstyles.contactContainer}>
           <div className={footerstyles.contact}>
-            <Image src={mail} alt="twitter" />
+            <div className={footerstyles.contactImage}>
+              <Image src={mail} alt="twitter" />
+            </div>
             <a href="mailto:helloecellvit@gmail.com">helloecellvit@gmail.com</a>
           </div>
           <div className={footerstyles.contact}>
-            <Image src={phone} alt="twitter" />
+            <div className={footerstyles.contactImage}>
+              <Image src={phone} alt="twitter" />
+            </div>
             <a href="tel:+918293622180">+918293622180</a>
           </div>
         </div>

@@ -81,7 +81,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
-    /* identical to box height */
+    /* identical to box height 3*/
 
     text-align: center;
     letter-spacing: 0.05em;
@@ -92,8 +92,7 @@
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 20px;
     text-align: center;
 
     padding: 2rem;
@@ -112,4 +111,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@media (max-width:900px) {
+    .aboutDesc {
+        font-size: 18px;
+        line-height: 27px;
+
+        text-align: justify;
+    }
 }

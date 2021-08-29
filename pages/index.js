@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import homeStyles from "../styles/Home.module.css";
 
 /*Components*/
@@ -10,13 +12,18 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className={homeStyles.container}>
-      <Landing />
-      <About />
-      <Events />
-      <Team />
-      <Gallery />
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <title>Entrepreneurship Cell VIT</title>
+      </Head>
+      <div className={homeStyles.container}>
+        <Landing />
+        <About />
+        <Events />
+        <Team />
+        <Gallery />
+        <Footer />
+      </div>
+    </>
   );
 }
