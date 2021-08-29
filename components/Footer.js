@@ -15,17 +15,45 @@ function FooterSocial() {
   return (
     <>
       <div className={footerstyles.socialLinksContainer}>
-        <div className={footerstyles.socialLink}>
-          <Image src={facebook} alt="facebook" />
+        <div className={footerstyles.socialChild}>
+          <div className={footerstyles.socialLink}>
+            <a
+              href="https://www.facebook.com/ecellvit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={facebook} alt="facebook" />
+            </a>
+          </div>
+          <div className={footerstyles.socialLink}>
+            <a
+              href="https://www.instagram.com/ecell_vit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={instagram} alt="instagram" />
+            </a>
+          </div>
         </div>
-        <div className={footerstyles.socialLink}>
-          <Image src={instagram} alt="instagram" />
-        </div>
-        <div className={footerstyles.socialLink}>
-          <Image src={linkedin} alt="linkedin" />
-        </div>
-        <div className={footerstyles.socialLink}>
-          <Image src={twitter} alt="twitter" />
+        <div className={footerstyles.socialChild}>
+          <div className={footerstyles.socialLink}>
+            <a
+              href="https://www.linkedin.com/company/ecellvitvellore"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={linkedin} alt="linkedin" />
+            </a>
+          </div>
+          <div className={footerstyles.socialLink}>
+            <a
+              href="https://twitter.com/ecell_vit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={twitter} alt="twitter" />
+            </a>
+          </div>
         </div>
       </div>
     </>
@@ -39,14 +67,15 @@ export default function Footer() {
         <div className={footerstyles.ecell_logo}>
           <Image src={Logo} alt="logo" />
         </div>
-        <h2>IDEATE. INNOVATE. ACTUATE</h2>
-        <div className={footerstyles.contact}>
-          <Image src={mail} alt="twitter" />
-          <a href="mailto:helloecellvit@gmail.com">helloecellvit@gmail.com</a>
-        </div>
-        <div className={footerstyles.contact}>
-          <Image src={phone} alt="twitter" />
-          <a href="tel:+918293622180">+918293622180</a>
+        <div className={footerstyles.contactContainer}>
+          <div className={footerstyles.contact}>
+            <Image src={mail} alt="twitter" />
+            <a href="mailto:helloecellvit@gmail.com">helloecellvit@gmail.com</a>
+          </div>
+          <div className={footerstyles.contact}>
+            <Image src={phone} alt="twitter" />
+            <a href="tel:+918293622180">+918293622180</a>
+          </div>
         </div>
         <div className={footerstyles.social}>
           <FooterSocial />

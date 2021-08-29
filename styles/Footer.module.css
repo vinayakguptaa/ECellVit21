@@ -1,9 +1,12 @@
 .footer {
-  background-color: #0c2828;
+  background-color: #182424;
   text-align: center;
-  padding-top: 20px;
   width: 100vw;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 3rem;
+  height: fit-content;
 }
 
 .ecell_logo {
@@ -12,37 +15,62 @@
 
 .smallContainer {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row;
+  width: 80%;
   align-items: center;
-  align-self: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .contact {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  /* identical to box height, or 32px */
+
+  letter-spacing: 0.03em;
+
+  color: #EAEAEA;
+
+  margin: 0.5rem;
+}
+
+.contact>a {
+  margin: 1rem;
+}
+
+.social {
+  width: 20%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  text-decoration: underline;
+  justify-content: space-between;
 }
 
 .socialLinksContainer {
+  width: inherit;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.socialLink {
-  margin: 2rem;
+.socialChild {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@media (max-width: 900px) {
-  .socialLinksContainer {
-    flex-direction: row;
-  }
+.socialLink {
+  margin: 1rem;
 }
+
+@media (max-width: 900px) {}
