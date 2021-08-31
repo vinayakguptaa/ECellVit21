@@ -17,7 +17,12 @@ function Event(props) {
     <div className={eventStyles.cards_item}>
       <div className={eventStyles.event_card}>
         <div className={eventStyles.event_card_image}>
-          <Image src={props.img} alt="event" layout="intrinsic" />
+          <Image
+            src={props.img}
+            alt="event"
+            layout="intrinsic"
+            loading="eager"
+          />
         </div>
         <h2 className={eventStyles.card_title}>{props.name}</h2>
         <div className={eventStyles.card_content}>

@@ -18,7 +18,7 @@ export default function Social() {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={facebook} alt="facebook" />
+            <Image src={facebook} alt="facebook" loading="eager" />
           </a>
         </div>
         <div className={landingStyles.socialLink}>
@@ -27,7 +27,7 @@ export default function Social() {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={instagram} alt="instagram" />
+            <Image src={instagram} alt="instagram" loading="eager" />
           </a>
         </div>
         <div className={landingStyles.socialLink}>
@@ -36,7 +36,7 @@ export default function Social() {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={linkedin} alt="linkedin" />
+            <Image src={linkedin} alt="linkedin" loading="eager" />
           </a>
         </div>
         <div className={landingStyles.socialLink}>
@@ -45,7 +45,7 @@ export default function Social() {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={twitter} alt="twitter" />
+            <Image src={twitter} alt="twitter" loading="eager" />
           </a>
         </div>
       </div>

@@ -72,7 +72,7 @@ export default function Nav(props) {
     <>
       <div className={landingStyles.navContainer}>
         <div className={landingStyles.ecellLogoContainer}>
-          <Image src={ecellLogo} alt="E-Cell VIT" />
+          <Image src={ecellLogo} alt="E-Cell VIT" loading="eager" />
         </div>
       </div>
 

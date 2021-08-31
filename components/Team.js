@@ -32,15 +32,16 @@ function Board(props) {
             src={`https://ecellvit21mainwebsite.s3.ap-south-1.amazonaws.com/boardImages2/${props.image}.jpg`}
             alt={props.name + ", " + props.designation}
             layout="fill"
+            loading="lazy"
           />
         </div>
 
         <div className={TeamStyles.imageItemOverlay}>
           <div className={TeamStyles.imageItemOverlayItem}>
-            <Image src={instagram} alt="instagram" />
+            <Image src={instagram} alt="instagram" loading="lazy" />
           </div>
           <div className={TeamStyles.imageItemOverlayItem}>
-            <Image src={linkedin} alt="linkedin" />
+            <Image src={linkedin} alt="linkedin" loading="lazy" />
           </div>
         </div>
       </div>
