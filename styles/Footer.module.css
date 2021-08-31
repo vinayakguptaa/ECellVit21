@@ -23,6 +23,14 @@
   justify-content: space-between;
 }
 
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
 .contactContainer {
   display: flex;
   flex-direction: column;
@@ -57,6 +65,7 @@
   width: 20%;
   display: flex;
   justify-content: space-between;
+
 }
 
 .socialLinksContainer {
@@ -85,7 +94,6 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    align-items: center;
     justify-content: space-between;
   }
 }
@@ -101,16 +109,31 @@
 }
 
 @media (max-width: 700px) {
+
   .contactContainer {
     transform: scale(1);
   }
 
   .smallContainer {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .socialContainer {
     justify-content: space-between;
   }
 
   .ecell_logo {
-    display: none;
+    position: relative;
+    min-width: 150px;
+    width: 20%;
+    max-width: 25%;
+    height: inherit;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact {

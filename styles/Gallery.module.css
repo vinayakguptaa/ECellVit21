@@ -1,5 +1,4 @@
 .mainContainer {
-
     margin: 4rem 0 3rem 0;
 }
 
@@ -75,14 +74,17 @@
     -khtml-user-select: none;
     -webkit-tap-highlight-color: transparent;
     margin-left: -10px;
-    display: flex;
 }
 
 .embla__slide {
     position: relative;
     min-width: 100%;
     padding-left: 10px;
+
+    height: 80vh;
 }
+
+
 
 .embla__slide__inner {
     position: relative;
@@ -102,6 +104,8 @@
     min-width: 100%;
     max-width: none;
     transform: translate(0%, -5%);
+
+    object-fit: contain;
 }
 
 .embla__button {
@@ -154,5 +158,10 @@
         margin-left: 0;
         margin-right: 0;
         margin-top: 3rem;
+    }
+
+
+    .embla__slide {
+        height: 60vh;
     }
 }

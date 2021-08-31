@@ -71,22 +71,26 @@ export default function Footer() {
         <div className={footerstyles.ecell_logo}>
           <Image src={Logo} alt="logo" />
         </div>
-        <div className={footerstyles.contactContainer}>
-          <div className={footerstyles.contact}>
-            <div className={footerstyles.contactImage}>
-              <Image src={mail} alt="twitter" />
+        <div className={footerstyles.socialContainer}>
+          <div className={footerstyles.contactContainer}>
+            <div className={footerstyles.contact}>
+              <div className={footerstyles.contactImage}>
+                <Image src={mail} alt="twitter" />
+              </div>
+              <a href="mailto:helloecellvit@gmail.com">
+                helloecellvit@gmail.com
+              </a>
             </div>
-            <a href="mailto:helloecellvit@gmail.com">helloecellvit@gmail.com</a>
-          </div>
-          <div className={footerstyles.contact}>
-            <div className={footerstyles.contactImage}>
-              <Image src={phone} alt="twitter" />
+            <div className={footerstyles.contact}>
+              <div className={footerstyles.contactImage}>
+                <Image src={phone} alt="twitter" />
+              </div>
+              <a href="tel:+918293622180">+918293622180</a>
             </div>
-            <a href="tel:+918293622180">+918293622180</a>
           </div>
-        </div>
-        <div className={footerstyles.social}>
-          <FooterSocial />
+          <div className={footerstyles.social}>
+            <FooterSocial />
+          </div>
         </div>
       </span>
     </div>

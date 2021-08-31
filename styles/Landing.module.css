@@ -4,9 +4,27 @@
     flex-direction: column;
 
     background-color: transparent;
-    background-image: linear-gradient(0deg, transparent 24%, #0d1111 25%, #0d1111 26%, transparent 27%, transparent 74%, #0d1111 75%, #0d1111 76%, transparent 77%, transparent),
-        linear-gradient(90deg, transparent 24%, #0d1111 25%, #0d1111 26%, transparent 27%, transparent 74%, #0d1111 75%, #0d1111 76%, transparent 77%, transparent);
-    background-size: 50px 50px;
+    background-image: linear-gradient(45deg,
+            transparent 24%,
+            #101a1a 25%,
+            #101a1a 26%,
+            transparent 27%,
+            transparent 74%,
+            #101a1a 75%,
+            #101a1a 76%,
+            transparent 77%,
+            transparent),
+        linear-gradient(135deg,
+            transparent 24%,
+            #101a1a 25%,
+            #101a1a 26%,
+            transparent 27%,
+            transparent 74%,
+            #101a1a 75%,
+            #101a1a 76%,
+            transparent 77%,
+            transparent);
+    background-size: 35px 35px;
 
 }
 

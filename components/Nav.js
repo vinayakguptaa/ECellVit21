@@ -35,37 +35,37 @@ function NavItems(props) {
   return "";
 }
 
-function mlPopUp() {
-  (function (m, a, i, l, e, r) {
-    m["MailerLiteObject"] = e;
-    function f() {
-      var c = { a: arguments, q: [] };
-      var r = this.push(c);
-      return "number" != typeof r ? r : f.bind(c.q);
-    }
-    f.q = f.q || [];
-    m[e] = m[e] || f.bind(f.q);
-    m[e].q = m[e].q || f.q;
-    r = a.createElement(i);
-    var _ = a.getElementsByTagName(i)[0];
-    r.async = 1;
-    r.src = l + "?v" + ~~(new Date().getTime() / 1000000);
-    _.parentNode.insertBefore(r, _);
-  })(
-    window,
-    document,
-    "script",
-    "https://static.mailerlite.com/js/universal.js",
-    "ml"
-  );
+// function mlPopUp() {
+//   (function (m, a, i, l, e, r) {
+//     m["MailerLiteObject"] = e;
+//     function f() {
+//       var c = { a: arguments, q: [] };
+//       var r = this.push(c);
+//       return "number" != typeof r ? r : f.bind(c.q);
+//     }
+//     f.q = f.q || [];
+//     m[e] = m[e] || f.bind(f.q);
+//     m[e].q = m[e].q || f.q;
+//     r = a.createElement(i);
+//     var _ = a.getElementsByTagName(i)[0];
+//     r.async = 1;
+//     r.src = l + "?v" + ~~(new Date().getTime() / 1000000);
+//     _.parentNode.insertBefore(r, _);
+//   })(
+//     window,
+//     document,
+//     "script",
+//     "https://static.mailerlite.com/js/universal.js",
+//     "ml"
+//   );
 
-  var ml_account = ml("accounts", "3319915", "a8u7f2p5f6", "load");
+//   var ml_account = ml("accounts", "3319915", "a8u7f2p5f6", "load");
 
-  var ml_webform_4496056 = ml_account("webforms", "4496056", "k2q3g9", "load");
-  ml_webform_4496056("animation", "fadeIn");
+//   var ml_webform_4496056 = ml_account("webforms", "4496056", "k2q3g9", "load");
+//   ml_webform_4496056("animation", "fadeIn");
 
-  ml_webform_4496056("show");
-}
+//   ml_webform_4496056("show");
+// }
 
 export default function Nav(props) {
   return (

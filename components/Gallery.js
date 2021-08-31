@@ -64,9 +64,10 @@ export default function Gallery() {
   }, [play]);
 
   return (
-    <div className={galleryStyles.mainContainer}>
-      <div className={galleryStyles.title} id="gallery">
-        Gallery
+    <div className={galleryStyles.mainContainer} id="gallery">
+      <div className={galleryStyles.title}>
+        <a href="#home">Gallery</a>
+        <div className={galleryStyles.embla__slide__inner}></div>
       </div>
       <div className={galleryStyles.container}>
         <div className={galleryStyles.embla}>
@@ -79,6 +80,9 @@ export default function Gallery() {
                       className={galleryStyles.embla__slide__img}
                       src={mediaByIndex(index)}
                       alt="Gallery"
+                      layout="fill"
+                      // placeholder="blur"
+                      // blurDataURL={mediaByIndex(index)}
                     />
                   </div>
                 </div>
