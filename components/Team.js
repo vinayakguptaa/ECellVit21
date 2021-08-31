@@ -8,21 +8,6 @@ import Image from "next/image";
 import instagram from "../public/icons/instagram.svg";
 import linkedin from "../public/icons/linkedin.svg";
 
-/*Board Images*/
-import Namrata from "../public/images/Namrata.jpg";
-import Nipun from "../public/images/Nipun.jpg";
-import Pearl from "../public/images/Pearl.jpg";
-import Rishabh from "../public/images/Rishabh.jpg";
-import Aaditya from "../public/images/Aaditya.jpg";
-import Mayank from "../public/images/Mayank.jpg";
-import Param from "../public/images/Param.jpg";
-import Yashraj from "../public/images/Yashraj.jpg";
-import Sanjiv from "../public/images/Sanjiv.jpg";
-import Anaswara from "../public/images/Anaswara.jpg";
-import Sahib from "../public/images/Sahib.jpg";
-import Akriti from "../public/images/Akriti.jpg";
-import Vinayak from "../public/images/Vinayak.jpg";
-
 function Board(props) {
   let offsetClass = null;
   let offset = "0rem";
@@ -44,8 +29,9 @@ function Board(props) {
       <div className={TeamStyles.imageItemContainer}>
         <div className={TeamStyles.imageItem}>
           <Image
-            src={props.image}
+            src={`https://ecellvit21mainwebsite.s3.ap-south-1.amazonaws.com/boardImages/${props.image}.jpg`}
             alt={props.name + ", " + props.designation}
+            layout="fill"
           />
         </div>
 
@@ -97,7 +83,7 @@ export default function Team() {
       <div className={TeamStyles.imageRowsContainer}>
         <div className={TeamStyles.imageRow}>
           <Board
-            image={Namrata}
+            image={"Namrata"}
             name="Namrata Singhal"
             designation="Managing Director"
             offset={false}
@@ -106,7 +92,7 @@ export default function Team() {
         </div>
         <div className={TeamStyles.imageRow}>
           <Board
-            image={Nipun}
+            image={"Nipun"}
             name="Nipun Mahajan"
             designation="Deputy Managing Director"
             offset={true}
@@ -114,7 +100,7 @@ export default function Team() {
           />
 
           <Board
-            image={Pearl}
+            image={"Pearl"}
             name="Pearl Motwani"
             designation="Deputy Managing Director"
             offset={true}
@@ -123,7 +109,7 @@ export default function Team() {
         </div>
         <div className={TeamStyles.imageRow}>
           <Board
-            image={Rishabh}
+            image={"Rishabh"}
             name="Rishabh Mehta"
             designation="Director Of Operations"
             offset={true}
@@ -131,7 +117,7 @@ export default function Team() {
           />
 
           <Board
-            image={Aaditya}
+            image={"Aaditya"}
             name="Aaditya Pareek"
             designation="Director Of Projects"
             offset={false}
@@ -139,7 +125,7 @@ export default function Team() {
           />
 
           <Board
-            image={Mayank}
+            image={"Mayank"}
             name="Mayank Jain"
             designation="Director Of Content Strategy"
             offset={true}
@@ -148,7 +134,7 @@ export default function Team() {
         </div>
         <div className={TeamStyles.imageRow}>
           <Board
-            image={Param}
+            image={"Param"}
             name="Param Sharma"
             designation="Director Of Design And Media"
             offset={true}
@@ -156,7 +142,7 @@ export default function Team() {
           />
 
           <Board
-            image={Yashraj}
+            image={"Yashraj"}
             name="Yashraj Singh"
             designation="Director Of Outreach"
             offset={false}
@@ -164,7 +150,7 @@ export default function Team() {
           />
 
           <Board
-            image={Sanjiv}
+            image={"Sanjiv"}
             name="Sanjiv Mohanty"
             designation="Director Of Research And Development"
             offset={true}
@@ -173,7 +159,7 @@ export default function Team() {
         </div>
         <div className={TeamStyles.imageRow}>
           <Board
-            image={Anaswara}
+            image={"Anaswara"}
             name="Anaswara Santhosh"
             designation="Director Of Collaborations"
             offset={true}
@@ -181,7 +167,7 @@ export default function Team() {
           />
 
           <Board
-            image={Sahib}
+            image={"Sahib"}
             name="Sahib Dua"
             designation="Director Of Finance And Sponsorship"
             offset={false}
@@ -189,14 +175,14 @@ export default function Team() {
           />
 
           <Board
-            image={Akriti}
+            image={"Akriti"}
             name="Akriti Agarwal"
             designation="Director Of Public Relations"
             offset={true}
             order={order.three}
           />
           <Board
-            image={Vinayak}
+            image={"Vinayak"}
             name="Vinayak Gupta"
             designation="Director Of Technology"
             offset={false}
