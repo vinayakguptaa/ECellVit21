@@ -110,9 +110,10 @@
 .imageItem {
     width: 200px;
     height: 186px;
-    border-radius: 4px;
     position: absolute;
 
+    border-radius: 0.4rem;
+    overflow: hidden;
 }
 
 .infoContainer {
