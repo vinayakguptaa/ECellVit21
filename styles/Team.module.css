@@ -66,8 +66,8 @@
 }
 
 .imageItemContainer {
-    width: 201px;
-    height: 220px;
+    width: 200px;
+    height: 186px;
 
     border-radius: 80px;
 
@@ -82,8 +82,8 @@
 }
 
 .imageItemOverlay {
-    width: 201px;
-    height: 220px;
+    width: 200px;
+    height: 186px;
 
     display: flex;
     justify-content: space-evenly;
@@ -108,16 +108,11 @@
 }
 
 .imageItem {
-    width: 201px;
-    height: 220px;
-
-    border-radius: 8px;
-
-    margin: 14px 0px;
-
+    width: 200px;
+    height: 186px;
+    border-radius: 4px;
     position: absolute;
 
-    overflow: hidden;
 }
 
 .infoContainer {
@@ -131,7 +126,6 @@
     height: 51px;
 
     margin: 0 0 2rem 0px;
-    transform: translateY(-1rem);
 }
 
 .boardName {

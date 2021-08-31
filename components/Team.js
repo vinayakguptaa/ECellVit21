@@ -29,7 +29,7 @@ function Board(props) {
       <div className={TeamStyles.imageItemContainer}>
         <div className={TeamStyles.imageItem}>
           <Image
-            src={`https://ecellvit21mainwebsite.s3.ap-south-1.amazonaws.com/boardImages/${props.image}.jpg`}
+            src={`https://ecellvit21mainwebsite.s3.ap-south-1.amazonaws.com/boardImages2/${props.image}.jpg`}
             alt={props.name + ", " + props.designation}
             layout="fill"
           />
