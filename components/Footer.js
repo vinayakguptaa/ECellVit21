@@ -23,7 +23,7 @@ function FooterSocial() {
               rel="noreferrer"
               className={footerstyles.socialLinkIcon}
             >
-              <Image src={facebook} alt="facebook" />
+              <Image src={facebook} alt="facebook" loading="lazy" />
             </a>
           </div>
           <div className={footerstyles.socialLink}>
@@ -33,7 +33,7 @@ function FooterSocial() {
               rel="noreferrer"
               className={footerstyles.socialLinkIcon}
             >
-              <Image src={instagram} alt="instagram" />
+              <Image src={instagram} alt="instagram" loading="lazy" />
             </a>
           </div>
         </div>
@@ -45,7 +45,7 @@ function FooterSocial() {
               rel="noreferrer"
               className={footerstyles.socialLinkIcon}
             >
-              <Image src={linkedin} alt="linkedin" />
+              <Image src={linkedin} alt="linkedin" loading="lazy" />
             </a>
           </div>
           <div className={footerstyles.socialLink}>
@@ -55,7 +55,7 @@ function FooterSocial() {
               rel="noreferrer"
               className={footerstyles.socialLinkIcon}
             >
-              <Image src={twitter} alt="twitter" />
+              <Image src={twitter} alt="twitter" loading="lazy" />
             </a>
           </div>
         </div>
@@ -69,13 +69,13 @@ export default function Footer() {
     <div className={footerstyles.footer}>
       <span className={footerstyles.smallContainer}>
         <div className={footerstyles.ecell_logo}>
-          <Image src={Logo} alt="logo" />
+          <Image src={Logo} alt="logo" loading="lazy" />
         </div>
         <div className={footerstyles.socialContainer}>
           <div className={footerstyles.contactContainer}>
             <div className={footerstyles.contact}>
               <div className={footerstyles.contactImage}>
-                <Image src={mail} alt="twitter" />
+                <Image src={mail} alt="twitter" loading="lazy" />
               </div>
               <a href="mailto:helloecellvit@gmail.com">
                 helloecellvit@gmail.com
@@ -83,7 +83,7 @@ export default function Footer() {
             </div>
             <div className={footerstyles.contact}>
               <div className={footerstyles.contactImage}>
-                <Image src={phone} alt="twitter" />
+                <Image src={phone} alt="twitter" loading="lazy" />
               </div>
               <a href="tel:+918293622180">+918293622180</a>
             </div>
