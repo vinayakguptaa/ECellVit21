@@ -32,7 +32,7 @@ function Board(props) {
             src={`https://ecellvit21mainwebsite.s3.ap-south-1.amazonaws.com/boardImages2/${props.image}.jpg`}
             alt={props.name + ", " + props.designation}
             layout="fill"
-            loading="lazy"
+            loading="eager"
           />
         </div>
 

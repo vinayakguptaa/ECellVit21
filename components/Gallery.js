@@ -81,7 +81,7 @@ export default function Gallery() {
                       src={mediaByIndex(index)}
                       alt="Gallery"
                       layout="fill"
-                      loading="lazy"
+                      loading="eager"
                       // placeholder="blur"
                       // blurDataURL={mediaByIndex(index)}
                     />
