@@ -28,16 +28,18 @@ export default function Home() {
         <title>Entrepreneurship Cell VIT</title>
       </Head>
 
-      <LoadingScreen loading={loading} />
-
-      <div className={homeStyles.container}>
-        <Landing />
-        <About />
-        <Events />
-        <Team />
-        <Gallery />
-        <Footer />
-      </div>
+      {loading ? (
+        <LoadingScreen loading={loading} />
+      ) : (
+        <div className={homeStyles.container}>
+          <Landing />
+          <About />
+          <Events />
+          <Team />
+          <Gallery />
+          <Footer />
+        </div>
+      )}
     </>
   );
 }
