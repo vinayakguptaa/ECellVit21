@@ -7,67 +7,20 @@ import Nav from "./Nav";
 import Social from "./Social";
 import Ecell from "./Ecell";
 
-export default function Landing() {
-  const [title, setTitle] = useState("ENTREPRENEURSHIP CELL VIT");
-  const [navActive, setNavActive] = useState(true);
-
-  useEffect(() => {
-    addEventListener("resize", () => {
-      if (window.innerWidth < 1000) {
-        setTitle("E-CELL");
-        setNavActive(false);
-      } else {
-        setTitle("ENTREPRENEURSHIP CELL VIT");
-        setNavActive(true);
-      }
-    });
-    addEventListener("load", () => {
-      if (window.innerWidth < 1000) {
-        setTitle("E-CELL");
-        setNavActive(false);
-      } else {
-        setTitle("ENTREPRENEURSHIP CELL VIT");
-        setNavActive(true);
-      }
-    });
-
-    return () => {
-      addEventListener("resize", () => {
-        if (window.innerWidth < 1000) {
-          setTitle("E-CELL");
-          setNavActive(false);
-        } else {
-          setTitle("ENTREPRENEURSHIP CELL VIT");
-          setNavActive(true);
-        }
-      });
-      addEventListener("load", () => {
-        if (window.innerWidth < 1000) {
-          setTitle("E-CELL");
-          setNavActive(false);
-        } else {
-          setTitle("ENTREPRENEURSHIP CELL VIT");
-          setNavActive(true);
-        }
-      });
-    };
-  }, []);
-
-  const links = {};
-
+export default function Landing(props) {
   return (
     <>
       <div className={landingStyles.container} id="home">
         <div className={landingStyles.navbar}>
-          <Nav active={navActive} />
+          <Nav active={props.navActive} />
         </div>
 
         <div className={landingStyles.section}>
           <div className={landingStyles.social}>
-            <Social links={links} />
+            <Social />
           </div>
           <div className={landingStyles.ecell}>
-            <Ecell title={title} />
+            <Ecell title={props.title} />
           </div>
         </div>
       </div>
