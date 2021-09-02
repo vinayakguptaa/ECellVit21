@@ -144,7 +144,7 @@
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) and (-webkit-text-fill-color: transparent) and (background: linear-gradient(#5edbc5, #e5e5e5)) {
-    .titleContainer {
+    .titleElement {
         color: transparent;
 
         background: linear-gradient(#5edbc5, #e5e5e5);
