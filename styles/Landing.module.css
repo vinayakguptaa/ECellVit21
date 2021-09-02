@@ -138,19 +138,23 @@
     align-items: center;
     flex-direction: column;
 
-    /* For Safari*/
-    display: inline;
-
     color: #5edbc5;
-
-    background: linear-gradient(#5edbc5, #e5e5e5);
-    background: -webkit-linear-gradient(#5edbc5, #e5e5e5);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
     transform: translateX(-5vw);
 }
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+    .titleContainer {
+        color: transparent;
+
+        background: linear-gradient(#5edbc5, #e5e5e5);
+        background: -webkit-linear-gradient(#5edbc5, #e5e5e5);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 
 .titleContainer>div {
     font-family: Poppins;
