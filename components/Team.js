@@ -24,7 +24,7 @@ function Board(props) {
   return (
     <div
       className={style["one"] + " " + style["two"]}
-      style={{ order: props.order, transform: `translateY(${offset})` }}
+      // style={{ order: props.order, transform: `translateY(${offset})` }}
     >
       <div className={TeamStyles.imageItemContainer}>
         <div className={TeamStyles.imageItem}>
@@ -82,114 +82,108 @@ export default function Team() {
       </div>
 
       <div className={TeamStyles.imageRowsContainer}>
-        <div className={TeamStyles.imageRow}>
-          <Board
-            image={"Namrata"}
-            name="Namrata Singhal"
-            designation="Managing Director"
-            offset={false}
-            order={order.two}
-          />
-        </div>
-        <div className={TeamStyles.imageRow}>
-          <Board
-            image={"Nipun"}
-            name="Nipun Mahajan"
-            designation="Deputy Managing Director"
-            offset={true}
-            order={order.one}
-          />
+        <Board
+          image={"Namrata"}
+          name="Namrata Singhal"
+          designation="Managing Director"
+          offset={false}
+          order={order.two}
+        />
 
-          <Board
-            image={"Pearl"}
-            name="Pearl Motwani"
-            designation="Deputy Managing Director"
-            offset={true}
-            order={order.three}
-          />
-        </div>
-        <div className={TeamStyles.imageRow}>
-          <Board
-            image={"Rishabh"}
-            name="Rishabh Mehta"
-            designation="Director Of Operations"
-            offset={true}
-            order={order.one}
-          />
+        <Board
+          image={"Nipun"}
+          name="Nipun Mahajan"
+          designation="Deputy Managing Director"
+          offset={true}
+          order={order.one}
+        />
 
-          <Board
-            image={"Aaditya"}
-            name="Aaditya Pareek"
-            designation="Director Of Projects"
-            offset={false}
-            order={order.two}
-          />
+        <Board
+          image={"Pearl"}
+          name="Pearl Motwani"
+          designation="Deputy Managing Director"
+          offset={true}
+          order={order.three}
+        />
 
-          <Board
-            image={"Mayank"}
-            name="Mayank Jain"
-            designation="Director Of Content Strategy"
-            offset={true}
-            order={order.three}
-          />
-        </div>
-        <div className={TeamStyles.imageRow}>
-          <Board
-            image={"Param"}
-            name="Param Sharma"
-            designation="Director Of Design And Media"
-            offset={true}
-            order={order.one}
-          />
+        <Board
+          image={"Rishabh"}
+          name="Rishabh Mehta"
+          designation="Director Of Operations"
+          offset={true}
+          order={order.one}
+        />
 
-          <Board
-            image={"Yashraj"}
-            name="Yashraj Singh"
-            designation="Director Of Outreach"
-            offset={false}
-            order={order.two}
-          />
+        <Board
+          image={"Aaditya"}
+          name="Aaditya Pareek"
+          designation="Director Of Projects"
+          offset={false}
+          order={order.two}
+        />
 
-          <Board
-            image={"Sanjiv"}
-            name="Sanjiv Mohanty"
-            designation="Director Of Research And Development"
-            offset={true}
-            order={order.three}
-          />
-        </div>
-        <div className={TeamStyles.imageRow}>
-          <Board
-            image={"Anaswara"}
-            name="Anaswara Santhosh"
-            designation="Director Of Collaborations"
-            offset={true}
-            order={order.one}
-          />
+        <Board
+          image={"Mayank"}
+          name="Mayank Jain"
+          designation="Director Of Content Strategy"
+          offset={true}
+          order={order.three}
+        />
 
-          <Board
-            image={"Sahib"}
-            name="Sahib Dua"
-            designation="Director Of Finance And Sponsorship"
-            offset={false}
-            order={order.two}
-          />
+        <Board
+          image={"Param"}
+          name="Param Sharma"
+          designation="Director Of Design And Media"
+          offset={true}
+          order={order.one}
+        />
 
-          <Board
-            image={"Akriti"}
-            name="Akriti Agarwal"
-            designation="Director Of Public Relations"
-            offset={true}
-            order={order.three}
-          />
-          <Board
-            image={"Vinayak"}
-            name="Vinayak Gupta"
-            designation="Director Of Technology"
-            offset={false}
-            order={order.four}
-          />
-        </div>
+        <Board
+          image={"Yashraj"}
+          name="Yashraj Singh"
+          designation="Director Of Outreach"
+          offset={false}
+          order={order.two}
+        />
+
+        <Board
+          image={"Sanjiv"}
+          name="Sanjiv Mohanty"
+          designation="Director Of Research And Development"
+          offset={true}
+          order={order.three}
+        />
+
+        <Board
+          image={"Anaswara"}
+          name="Anaswara Santhosh"
+          designation="Director Of Collaborations"
+          offset={true}
+          order={order.one}
+        />
+
+        <Board
+          image={"Sahib"}
+          name="Sahib Dua"
+          designation="Director Of Finance And Sponsorship"
+          offset={false}
+          order={order.two}
+        />
+
+        <Board
+          image={"Akriti"}
+          name="Akriti Agarwal"
+          designation="Director Of Public Relations"
+          offset={true}
+          order={order.three}
+        />
+        <Board
+          image={"Vinayak"}
+          name="Vinayak Gupta"
+          designation="Director Of Technology"
+          offset={false}
+          order={order.four}
+        />
       </div>
     </div>
   );

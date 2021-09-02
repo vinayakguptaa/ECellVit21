@@ -117,6 +117,8 @@
   .smallContainer {
     width: 100%;
     flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 

@@ -62,7 +62,7 @@
     margin: 1rem;
 
     border-radius: 80px;
-    border: 2px solid white;
+
 }
 
 .imageItemContainer {
@@ -176,8 +176,63 @@
     height: fit-content;
     margin-top: 2rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+}
+
+/*              rows            */
+
+
+.imageRowsContainer>div:nth-child(n) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imageRowsContainer>div:nth-child(1) {
+    width: 100vw;
+}
+
+.imageRowsContainer>div:nth-child(2),
+.imageRowsContainer>div:nth-child(3) {
+    width: 45vw;
+}
+
+.imageRowsContainer>div:nth-child(4),
+.imageRowsContainer>div:nth-child(5),
+.imageRowsContainer>div:nth-child(5),
+.imageRowsContainer>div:nth-child(6),
+.imageRowsContainer>div:nth-child(7),
+.imageRowsContainer>div:nth-child(8),
+.imageRowsContainer>div:nth-child(9) {
+    width: 30vw;
+}
+
+.imageRowsContainer>div:nth-child(10),
+.imageRowsContainer>div:nth-child(11),
+.imageRowsContainer>div:nth-child(12),
+.imageRowsContainer>div:nth-child(13) {
+    width: 24vw;
+}
+
+@media (max-width:1000px) {
+    .imageRowsContainer>div:nth-child(2n+2) {
+        width: 45vw;
+    }
+
+    .imageRowsContainer>div:nth-child(2n+3) {
+        width: 45vw;
+    }
+}
+
+@media (max-width:550px) {
+    .imageRowsContainer>div:nth-child(n) {
+        width: 100vw;
+    }
 }
 
 .imageRow {
