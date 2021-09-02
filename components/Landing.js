@@ -8,6 +8,7 @@ import Social from "./Social";
 import Ecell from "./Ecell";
 
 export default function Landing(props) {
+  if (!props.title) props.title = "E-Cell";
   return (
     <>
       <div className={landingStyles.container} id="home">
