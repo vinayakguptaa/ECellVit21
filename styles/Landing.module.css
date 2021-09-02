@@ -138,10 +138,13 @@
     align-items: center;
     flex-direction: column;
 
-    color: #5EDBC5;
+    /* For Safari*/
+    display: inline;
 
-    background: linear-gradient(#5EDBC5, #E5E5E5);
-    background: -webkit-linear-gradient(#5EDBC5, #E5E5E5);
+    color: #5edbc5;
+
+    background: linear-gradient(#5edbc5, #e5e5e5);
+    background: -webkit-linear-gradient(#5edbc5, #e5e5e5);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
