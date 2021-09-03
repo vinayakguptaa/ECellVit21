@@ -11,6 +11,10 @@ import linkedin from "../public/icons/linkedin.svg";
 function Board(props) {
   let offsetClass = null;
   let offset = "0rem";
+  let display = "block";
+  if (props.instagramNotAvailable) {
+    display = "none";
+  }
   if (props.offset) {
     offsetClass = "TeamStyles.offsetImage";
     offset = "0rem";
@@ -37,11 +41,18 @@ function Board(props) {
         </div>
 
         <div className={TeamStyles.imageItemOverlay}>
-          <div className={TeamStyles.imageItemOverlayItem}>
-            <Image src={instagram} alt="instagram" loading="lazy" />
+          <div
+            className={TeamStyles.imageItemOverlayItem}
+            style={{ display: display }}
+          >
+            <a href={props.instagram} target="_blank" rel="noreferrer">
+              <Image src={instagram} alt="instagram" loading="lazy" />
+            </a>
           </div>
           <div className={TeamStyles.imageItemOverlayItem}>
-            <Image src={linkedin} alt="linkedin" loading="lazy" />
+            <a href={props.linkedin} target="_blank" rel="noreferrer">
+              <Image src={linkedin} alt="linkedin" loading="lazy" />
+            </a>
           </div>
         </div>
       </div>
@@ -88,6 +99,9 @@ export default function Team() {
           designation="Managing Director"
           offset={false}
           order={order.two}
+          instagram=""
+          instagramNotAvailable={true}
+          linkedin="https://www.linkedin.com/in/namrata-singhal-ba8735199/"
         />
 
         <Board
@@ -96,6 +110,8 @@ export default function Team() {
           designation="Deputy Managing Director"
           offset={true}
           order={order.one}
+          instagram="https://www.instagram.com/nipun_3000/"
+          linkedin="https://www.linkedin.com/in/nipun-mahajan-6b6718165/"
         />
 
         <Board
@@ -104,6 +120,8 @@ export default function Team() {
           designation="Deputy Managing Director"
           offset={true}
           order={order.three}
+          instagram="https://www.instagram.com/pearl.motwani/"
+          linkedin="https://www.linkedin.com/in/pearl-motwani-862089190/"
         />
 
         <Board
@@ -112,6 +130,8 @@ export default function Team() {
           designation="Director Of Operations"
           offset={true}
           order={order.one}
+          instagram="https://www.instagram.com/rishabh67/"
+          linkedin="https://www.linkedin.com/in/rishabh-mehta1605/"
         />
 
         <Board
@@ -120,6 +140,8 @@ export default function Team() {
           designation="Director Of Projects"
           offset={false}
           order={order.two}
+          instagram="https://www.instagram.com/aadityapareek/"
+          linkedin="https://www.linkedin.com/in/aaditya-pareek-29646318a/"
         />
 
         <Board
@@ -128,6 +150,8 @@ export default function Team() {
           designation="Director Of Content Strategy"
           offset={true}
           order={order.three}
+          instagram="https://www.instagram.com/mayank.2506/"
+          linkedin="https://www.linkedin.com/in/mayank-1010/"
         />
 
         <Board
@@ -136,6 +160,8 @@ export default function Team() {
           designation="Director Of Design And Media"
           offset={true}
           order={order.one}
+          instagram="https://www.instagram.com/paramssharma/"
+          linkedin="https://www.linkedin.com/in/paramssharma/"
         />
 
         <Board
@@ -144,6 +170,8 @@ export default function Team() {
           designation="Director Of Outreach"
           offset={false}
           order={order.two}
+          instagram="https://www.instagram.com/yashraj_singh_29/"
+          linkedin="https://www.linkedin.com/in/yashraj-singh-973374187/"
         />
 
         <Board
@@ -152,6 +180,8 @@ export default function Team() {
           designation="Director Of Research And Development"
           offset={true}
           order={order.three}
+          instagram="https://www.instagram.com/_sanjivmohanty/"
+          linkedin="https://www.linkedin.com/in/sanjiv-mohanty-480397199/"
         />
 
         <Board
@@ -160,6 +190,9 @@ export default function Team() {
           designation="Director Of Collaborations"
           offset={true}
           order={order.one}
+          instagram=""
+          instagramNotAvailable={true}
+          linkedin="https://www.linkedin.com/in/anaswara-santhosh-174964199/"
         />
 
         <Board
@@ -168,6 +201,8 @@ export default function Team() {
           designation="Director Of Finance And Sponsorship"
           offset={false}
           order={order.two}
+          instagram="https://www.instagram.com/sahib.dua/"
+          linkedin="https://www.linkedin.com/in/sahib-dua-18b7121a1/"
         />
 
         <Board
@@ -176,6 +211,8 @@ export default function Team() {
           designation="Director Of Public Relations"
           offset={true}
           order={order.three}
+          instagram="https://www.instagram.com/akritiagarwal09/"
+          linkedin="https://www.linkedin.com/in/akriti-agarwal-5295b61a0/"
         />
         <Board
           image={"Vinayak"}
@@ -183,6 +220,8 @@ export default function Team() {
           designation="Director Of Technology"
           offset={false}
           order={order.four}
+          instagram="https://www.instagram.com/vinayakgupta.in/"
+          linkedin="https://www.linkedin.com/in/vinayakguptaa/"
         />
       </div>
     </div>
