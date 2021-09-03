@@ -199,7 +199,7 @@
 
 .imageRowsContainer>div:nth-child(2),
 .imageRowsContainer>div:nth-child(3) {
-    width: 45vw;
+    width: 35vw;
 }
 
 .imageRowsContainer>div:nth-child(4),
@@ -209,7 +209,7 @@
 .imageRowsContainer>div:nth-child(7),
 .imageRowsContainer>div:nth-child(8),
 .imageRowsContainer>div:nth-child(9) {
-    width: 30vw;
+    width: 32.8vw;
 }
 
 .imageRowsContainer>div:nth-child(10),
