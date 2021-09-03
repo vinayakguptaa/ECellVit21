@@ -37,7 +37,7 @@ export default function Gallery() {
       <div className={galleryStyles.container}>
         <div className={galleryStyles.imageMainContainer}>
           {images.map((src, index) => (
-            <div className={galleryStyles.imageItemContainer}>
+            <div className={galleryStyles.imageItemContainer} key={index}>
               <Image
                 src={src}
                 onClick={() => openImageViewer(index)}
