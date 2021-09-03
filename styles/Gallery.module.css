@@ -1,15 +1,19 @@
 .mainContainer {
     margin: 4rem 0 3rem 0;
+    height: fit-content;
 }
 
 .container {
-    max-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 4rem 0 3rem 0;
 
     width: 100vw;
+
+    height: fit-content;
+
 }
 
 .title {
@@ -32,113 +36,29 @@
     text-transform: capitalize;
 }
 
-.embla {
-    position: relative;
-    padding: 1rem;
-    min-width: 70%;
-    max-width: 80%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
+.imageMainContainer {
+    width: 100vw;
     height: fit-content;
-    max-height: 90vh;
 
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 3rem;
-    overflow: hidden;
-}
-
-.embla__viewport {
-    overflow: hidden;
-    width: 100%;
-}
-
-.embla__viewport.is-draggable {
-    cursor: move;
-    cursor: -webkit-grab;
-    cursor: grab;
-}
-
-.embla__viewport.is-dragging {
-    cursor: -webkit-grabbing;
-    cursor: grabbing;
-}
-
-.embla__container {
     display: flex;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    margin-left: -10px;
-}
-
-.embla__slide {
-    position: relative;
-    min-width: 100%;
-    padding-left: 10px;
-
-    height: 80vh;
-}
-
-
-
-.embla__slide__inner {
-    position: relative;
-    overflow: hidden;
-    height: 190px;
-    max-height: inherit;
-    height: inherit;
-}
-
-.embla__slide__img {
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    min-height: 100%;
-    min-width: 100%;
-    max-width: none;
-    transform: translate(0%, -5%);
-
-    -o-object-fit: contain;
-
-    object-fit: contain;
-}
-
-.embla__button {
-    outline: 0;
-    cursor: pointer;
-    background-color: transparent;
-    touch-action: manipulation;
-    position: absolute;
-    z-index: 1;
-    border: 0;
-    width: 30px;
-    height: 30px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    fill: #1bcacd;
-    padding: 0;
 }
 
-.embla__button:disabled {
-    cursor: default;
-    opacity: 0.3;
+.imageItemContainer {
+    height: 216px;
+    width: 384px;
+
+    display: flex;
+
+    margin: 2rem;
 }
 
-.embla__button__svg {
-    width: 100%;
-    height: 100%;
-}
+.imageItem {}
 
 @media (max-width: 700px) {
     .container {
-        max-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -148,22 +68,5 @@
         width: 100%;
     }
 
-    .embla {
-        position: relative;
-        padding: 0;
-        width: 100vh;
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
-        max-height: 90vh;
 
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 3rem;
-    }
-
-
-    .embla__slide {
-        height: 60vh;
-    }
 }
