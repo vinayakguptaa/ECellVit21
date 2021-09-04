@@ -4,7 +4,7 @@ import landingStyles from "../styles/Landing.module.css";
 
 /*Components*/
 import Nav from "./Nav";
-import Social from "./Social";
+import SLinks from "./SLinks";
 import Ecell from "./Ecell";
 
 export default function Landing(props) {
@@ -18,7 +18,7 @@ export default function Landing(props) {
 
         <div className={landingStyles.section}>
           <div className={landingStyles.social}>
-            <Social />
+            <SLinks />
           </div>
           <div className={landingStyles.ecell}>
             <Ecell title={props.title} />

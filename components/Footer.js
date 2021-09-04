@@ -11,49 +11,49 @@ import Logo from "../public/logos/ecell-vit-logo.png";
 import mail from "../public/icons/mail.svg";
 import phone from "../public/icons/phone.svg";
 
-function FooterSocial() {
+function FooterSLink() {
   return (
     <>
-      <div className={footerstyles.socialLinksContainer}>
-        <div className={footerstyles.socialChild}>
-          <div className={footerstyles.socialLink}>
+      <div className={footerstyles.slinkLinksContainer}>
+        <div className={footerstyles.slinkChild}>
+          <div className={footerstyles.slinkLink}>
             <a
               href="https://www.facebook.com/ecellvit"
               target="_blank"
               rel="noreferrer"
-              className={footerstyles.socialLinkIcon}
+              className={footerstyles.slinkLinkIcon}
             >
               <Image src={facebook} alt="facebook" loading="lazy" />
             </a>
           </div>
-          <div className={footerstyles.socialLink}>
+          <div className={footerstyles.slinkLink}>
             <a
               href="https://www.instagram.com/ecell_vit"
               target="_blank"
               rel="noreferrer"
-              className={footerstyles.socialLinkIcon}
+              className={footerstyles.slinkLinkIcon}
             >
               <Image src={instagram} alt="instagram" loading="lazy" />
             </a>
           </div>
         </div>
-        <div className={footerstyles.socialChild}>
-          <div className={footerstyles.socialLink}>
+        <div className={footerstyles.slinkChild}>
+          <div className={footerstyles.slinkLink}>
             <a
               href="https://www.linkedin.com/company/ecellvitvellore"
               target="_blank"
               rel="noreferrer"
-              className={footerstyles.socialLinkIcon}
+              className={footerstyles.slinkLinkIcon}
             >
               <Image src={linkedin} alt="linkedin" loading="lazy" />
             </a>
           </div>
-          <div className={footerstyles.socialLink}>
+          <div className={footerstyles.slinkLink}>
             <a
               href="https://twitter.com/ecell_vit"
               target="_blank"
               rel="noreferrer"
-              className={footerstyles.socialLinkIcon}
+              className={footerstyles.slinkLinkIcon}
             >
               <Image src={twitter} alt="twitter" loading="lazy" />
             </a>
@@ -71,7 +71,7 @@ export default function Footer() {
         <div className={footerstyles.ecell_logo}>
           <Image src={Logo} alt="logo" loading="lazy" />
         </div>
-        <div className={footerstyles.socialContainer}>
+        <div className={footerstyles.slinkContainer}>
           <div className={footerstyles.contactContainer}>
             <div className={footerstyles.contact}>
               <div className={footerstyles.contactImage}>
@@ -88,8 +88,8 @@ export default function Footer() {
               <a href="tel:+918293622180">+918293622180</a>
             </div>
           </div>
-          <div className={footerstyles.social}>
-            <FooterSocial />
+          <div className={footerstyles.slink}>
+            <FooterSLink />
           </div>
         </div>
       </span>

@@ -23,7 +23,7 @@
   justify-content: space-between;
 }
 
-.socialContainer {
+.slinkContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -61,14 +61,14 @@
   margin: 0 1rem;
 }
 
-.social {
+.slink {
   width: 20%;
   display: flex;
   justify-content: space-between;
 
 }
 
-.socialLinksContainer {
+.slinkLinksContainer {
   width: inherit;
   display: flex;
   flex-direction: column;
@@ -78,14 +78,14 @@
   align-items: center;
 }
 
-.socialChild {
+.slinkChild {
   width: inherit;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.socialLink {
+.slinkLink {
   margin: 1rem;
 }
 
@@ -122,7 +122,7 @@
     height: fit-content;
   }
 
-  .socialContainer {
+  .slinkContainer {
     justify-content: space-between;
   }
 
@@ -151,11 +151,11 @@
   }
 
 
-  .socialLink {
+  .slinkLink {
     margin: 8px 0;
   }
 
-  .social {
+  .slink {
     width: 30%;
     display: flex;
     justify-content: space-evenly;

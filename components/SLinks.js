@@ -8,11 +8,11 @@ import instagram from "../public/icons/instagram.svg";
 import linkedin from "../public/icons/linkedin.svg";
 import twitter from "../public/icons/twitter.svg";
 
-export default function Social() {
+export default function SLink() {
   return (
     <>
-      <div className={landingStyles.socialLinksContainer}>
-        <div className={landingStyles.socialLink}>
+      <div className={landingStyles.slinkLinksContainer}>
+        <div className={landingStyles.slinkLink}>
           <a
             href="https://www.facebook.com/ecellvit"
             target="_blank"
@@ -21,7 +21,7 @@ export default function Social() {
             <Image src={facebook} alt="facebook" loading="eager" />
           </a>
         </div>
-        <div className={landingStyles.socialLink}>
+        <div className={landingStyles.slinkLink}>
           <a
             href="https://www.instagram.com/ecell_vit"
             target="_blank"
@@ -30,7 +30,7 @@ export default function Social() {
             <Image src={instagram} alt="instagram" loading="eager" />
           </a>
         </div>
-        <div className={landingStyles.socialLink}>
+        <div className={landingStyles.slinkLink}>
           <a
             href="https://www.linkedin.com/company/ecellvitvellore"
             target="_blank"
@@ -39,7 +39,7 @@ export default function Social() {
             <Image src={linkedin} alt="linkedin" loading="eager" />
           </a>
         </div>
-        <div className={landingStyles.socialLink}>
+        <div className={landingStyles.slinkLink}>
           <a
             href="https://twitter.com/ecell_vit"
             target="_blank"

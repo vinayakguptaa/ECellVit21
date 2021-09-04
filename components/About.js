@@ -23,7 +23,7 @@ export default function About() {
           </div>
         </div>
         <div className={AboutStyles.sectionB}>
-          <div className={AboutStyles.aboutTitle}>What is Ecell?</div>
+          <div className={AboutStyles.aboutTitle}>What is E-Cell?</div>
           <div className={AboutStyles.aboutDesc}>
             Entrepreneurship Cell is a student body based in VIT, Vellore which
             aims at fostering entrepreneurial spirit amongst young aspirants by
