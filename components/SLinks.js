@@ -8,6 +8,8 @@ import instagram from "../public/icons/instagram.svg";
 import linkedin from "../public/icons/linkedin.svg";
 import twitter from "../public/icons/twitter.svg";
 
+import loader from "./imageLoader";
+
 export default function SLink() {
   return (
     <>
@@ -19,7 +21,12 @@ export default function SLink() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={facebook} alt="facebook" loading="eager" />
+              <Image
+                loader={loader}
+                src={facebook}
+                alt="facebook"
+                loading="eager"
+              />
             </a>
           </div>
         </div>
@@ -30,7 +37,12 @@ export default function SLink() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={instagram} alt="instagram" loading="eager" />
+              <Image
+                loader={loader}
+                src={instagram}
+                alt="instagram"
+                loading="eager"
+              />
             </a>
           </div>
         </div>
@@ -41,7 +53,12 @@ export default function SLink() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={linkedin} alt="linkedin" loading="eager" />
+              <Image
+                loader={loader}
+                src={linkedin}
+                alt="linkedin"
+                loading="eager"
+              />
             </a>
           </div>
         </div>
@@ -52,7 +69,12 @@ export default function SLink() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={twitter} alt="twitter" loading="eager" />
+              <Image
+                loader={loader}
+                src={twitter}
+                alt="twitter"
+                loading="eager"
+              />
             </a>
           </div>
         </div>

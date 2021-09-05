@@ -12,6 +12,8 @@ import Udaan from "../public/logos/udaan.png";
 import Scribble from "../public/logos/scribble.png";
 import Alumni from "../public/logos/alumni_talk.png";
 
+import loader from "./imageLoader";
+
 function Event(props) {
   return (
     <div className={eventStyles.cards_item}>
@@ -22,6 +24,7 @@ function Event(props) {
             alt="event"
             layout="intrinsic"
             loading="eager"
+            loader={loader}
           />
         </div>
         <h2 className={eventStyles.card_title}>{props.name}</h2>

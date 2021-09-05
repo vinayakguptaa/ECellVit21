@@ -8,6 +8,8 @@ import Image from "next/image";
 import instagram from "../public/icons/instagram.svg";
 import linkedin from "../public/icons/linkedin.svg";
 
+import loader from "./imageLoader";
+
 function Board(props) {
   let offsetClass = null;
   let offset = "0rem";
@@ -33,6 +35,7 @@ function Board(props) {
       <div className={TeamStyles.imageItemContainer}>
         <div className={TeamStyles.imageItem}>
           <Image
+            loader={loader}
             src={`https://ecellvit21mainwebsite.s3.ap-south-1.amazonaws.com/boardImages2/${props.image}.jpg`}
             alt={props.name + ", " + props.designation}
             layout="fill"
@@ -46,12 +49,22 @@ function Board(props) {
             style={{ display: display }}
           >
             <a href={props.instagram} target="_blank" rel="noreferrer">
-              <Image src={instagram} alt="instagram" loading="lazy" />
+              <Image
+                loader={loader}
+                src={instagram}
+                alt="instagram"
+                loading="lazy"
+              />
             </a>
           </div>
           <div className={TeamStyles.imageItemOverlayItem}>
             <a href={props.linkedin} target="_blank" rel="noreferrer">
-              <Image src={linkedin} alt="linkedin" loading="lazy" />
+              <Image
+                loader={loader}
+                src={linkedin}
+                alt="linkedin"
+                loading="lazy"
+              />
             </a>
           </div>
         </div>

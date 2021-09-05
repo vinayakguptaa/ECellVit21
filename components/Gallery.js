@@ -8,6 +8,8 @@ import { mediaByIndex } from "../public/galleryImages/index.js";
 
 import ImageViewer from "react-simple-image-viewer";
 
+import loader from "./imageLoader";
+
 export default function Gallery() {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
@@ -40,6 +42,7 @@ export default function Gallery() {
             <div className={galleryStyles.imageItemContainer} key={index}>
               <div className={galleryStyles.imageItem}>
                 <Image
+                  loader={loader}
                   src={src}
                   onClick={() => openImageViewer(index)}
                   key={index}

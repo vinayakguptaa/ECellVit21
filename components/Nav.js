@@ -5,6 +5,8 @@ import landingStyles from "../styles/Landing.module.css";
 import Image from "next/image";
 import ecellLogo from "../public/logos/ecell-vit-logo.png";
 
+import loader from "./imageLoader";
+
 function NavItems(props) {
   if (props.active) {
     return (
@@ -72,7 +74,12 @@ export default function Nav(props) {
     <>
       <div className={landingStyles.navContainer}>
         <div className={landingStyles.ecellLogoContainer}>
-          <Image src={ecellLogo} alt="E-Cell VIT" loading="eager" />
+          <Image
+            src={ecellLogo}
+            alt="E-Cell VIT"
+            loading="eager"
+            loader={loader}
+          />
         </div>
       </div>
 

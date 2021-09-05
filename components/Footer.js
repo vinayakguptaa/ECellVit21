@@ -11,6 +11,8 @@ import Logo from "../public/logos/ecell-vit-logo.png";
 import mail from "../public/icons/mail.svg";
 import phone from "../public/icons/phone.svg";
 
+import loader from "./imageLoader";
+
 function FooterSLink() {
   return (
     <>
@@ -23,7 +25,12 @@ function FooterSLink() {
               rel="noreferrer"
               className={footerstyles.slinkLinkIcon}
             >
-              <Image src={facebook} alt="facebook" loading="lazy" />
+              <Image
+                loader={loader}
+                src={facebook}
+                alt="facebook"
+                loading="lazy"
+              />
             </a>
           </div>
           <div className={footerstyles.slinkLink}>
@@ -33,7 +40,12 @@ function FooterSLink() {
               rel="noreferrer"
               className={footerstyles.slinkLinkIcon}
             >
-              <Image src={instagram} alt="instagram" loading="lazy" />
+              <Image
+                loader={loader}
+                src={instagram}
+                alt="instagram"
+                loading="lazy"
+              />
             </a>
           </div>
         </div>
@@ -45,7 +57,12 @@ function FooterSLink() {
               rel="noreferrer"
               className={footerstyles.slinkLinkIcon}
             >
-              <Image src={linkedin} alt="linkedin" loading="lazy" />
+              <Image
+                loader={loader}
+                src={linkedin}
+                alt="linkedin"
+                loading="lazy"
+              />
             </a>
           </div>
           <div className={footerstyles.slinkLink}>
@@ -55,7 +72,12 @@ function FooterSLink() {
               rel="noreferrer"
               className={footerstyles.slinkLinkIcon}
             >
-              <Image src={twitter} alt="twitter" loading="lazy" />
+              <Image
+                loader={loader}
+                src={twitter}
+                alt="twitter"
+                loading="lazy"
+              />
             </a>
           </div>
         </div>
@@ -69,13 +91,18 @@ export default function Footer() {
     <div className={footerstyles.footer}>
       <span className={footerstyles.smallContainer}>
         <div className={footerstyles.ecell_logo}>
-          <Image src={Logo} alt="logo" loading="lazy" />
+          <Image loader={loader} src={Logo} alt="logo" loading="lazy" />
         </div>
         <div className={footerstyles.slinkContainer}>
           <div className={footerstyles.contactContainer}>
             <div className={footerstyles.contact}>
               <div className={footerstyles.contactImage}>
-                <Image src={mail} alt="twitter" loading="lazy" />
+                <Image
+                  loader={loader}
+                  src={mail}
+                  alt="twitter"
+                  loading="lazy"
+                />
               </div>
               <a href="mailto:helloecellvit@gmail.com">
                 helloecellvit@gmail.com
@@ -83,7 +110,12 @@ export default function Footer() {
             </div>
             <div className={footerstyles.contact}>
               <div className={footerstyles.contactImage}>
-                <Image src={phone} alt="twitter" loading="lazy" />
+                <Image
+                  loader={loader}
+                  src={phone}
+                  alt="twitter"
+                  loading="lazy"
+                />
               </div>
               <a href="tel:+918293622180">+918293622180</a>
             </div>
