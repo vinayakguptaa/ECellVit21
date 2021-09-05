@@ -88,9 +88,9 @@ export default function Team() {
 
   return (
     <div className={TeamStyles.teamContainer} id="team">
-      <div className={TeamStyles.title}>
-        <a href="#home">Our Team</a>
-      </div>
+      <a href="#home">
+        <div className={TeamStyles.title}>Our Team</div>
+      </a>
 
       <div className={TeamStyles.imageRowsContainer}>
         <Board

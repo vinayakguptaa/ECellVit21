@@ -23,7 +23,9 @@ export default function About() {
           </div>
         </div>
         <div className={AboutStyles.sectionB}>
-          <div className={AboutStyles.aboutTitle}>What is E-Cell?</div>
+          <a href="#home">
+            <div className={AboutStyles.aboutTitle}>What is E-Cell?</div>
+          </a>
           <div className={AboutStyles.aboutDesc}>
             Entrepreneurship Cell is a student body based in VIT, Vellore which
             aims at fostering entrepreneurial spirit amongst young aspirants by
@@ -37,7 +39,9 @@ export default function About() {
           </div>
         </div>
         <div className={AboutStyles.sectionC}>
-          <div className={AboutStyles.aboutTitle}> About VIT TBI</div>
+          <a href="#home">
+            <div className={AboutStyles.aboutTitle}>About VIT TBI</div>
+          </a>
           <div className={AboutStyles.aboutDesc}>
             VIT TBI (Technology Business Incubator) has been established at
             Vellore Institute of Technology with the Sponsorship of the

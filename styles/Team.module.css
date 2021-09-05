@@ -48,6 +48,10 @@
     text-transform: capitalize;
 }
 
+.title:hover {
+    -webkit-text-fill-color: #5edbc5;
+}
+
 .imageContainer {
     display: flex;
     flex-direction: column;

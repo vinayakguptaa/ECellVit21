@@ -38,16 +38,17 @@ export default function Gallery() {
         <div className={galleryStyles.imageMainContainer}>
           {images.map((src, index) => (
             <div className={galleryStyles.imageItemContainer} key={index}>
-              <Image
-                src={src}
-                onClick={() => openImageViewer(index)}
-                width="384px"
-                height="216px"
-                key={index}
-                alt=""
-                // layout="fill"
-                className={galleryStyles.imageItem}
-              />
+              <div className={galleryStyles.imageItem}>
+                <Image
+                  src={src}
+                  onClick={() => openImageViewer(index)}
+                  // width="384px"
+                  // height="216px"
+                  key={index}
+                  alt=""
+                  layout="fill"
+                />
+              </div>
             </div>
           ))}
         </div>

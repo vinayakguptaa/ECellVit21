@@ -20,12 +20,19 @@
   margin-top: 5rem;
 }
 
+.title:hover {
+  -webkit-text-fill-color: #5edbc5;
+}
+
 .main {
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin-top: 2rem;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .cards {
@@ -40,6 +47,8 @@
   display: flex;
   padding: 1rem;
 }
+
+
 
 @media (min-width: 40rem) {
   .cards_item {
@@ -63,6 +72,12 @@
   flex-direction: column;
   overflow: hidden;
   background: #394343;
+
+  transition: .1s ease-in-out;
+}
+
+.event_card:hover {
+  box-shadow: 0 0 1px 1px #5edbc5;
 }
 
 .event_card_image {

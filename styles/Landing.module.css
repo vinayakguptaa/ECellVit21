@@ -90,7 +90,7 @@
 
 .ecellLogoContainer {
     position: absolute;
-    min-width: 100px;
+    min-width: 130px;
     width: 10%;
     max-width: 15%;
     height: inherit;
@@ -223,5 +223,11 @@
 (max-height:600px) {
     .titleContainer {
         transform: translateX(0);
+    }
+}
+
+@media (max-width:276px) {
+    .slinkLink {
+        margin: 0.5rem;
     }
 }

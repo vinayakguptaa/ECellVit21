@@ -1,5 +1,7 @@
 .mainContainer {
     margin: 4rem 0 3rem 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -8,9 +10,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 4rem 0 3rem 0;
+    margin: 2rem 0 1rem 0;
 
     width: 100vw;
+
+    height: -webkit-fit-content;
+
+    height: -moz-fit-content;
 
     height: fit-content;
 
@@ -36,12 +42,19 @@
     text-transform: capitalize;
 }
 
+.title>a:hover {
+    -webkit-text-fill-color: #5edbc5;
+}
+
 .imageMainContainer {
-    width: 100vw;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -49,13 +62,29 @@
 .imageItemContainer {
     height: 216px;
     width: 384px;
-
+    /* position: absolute; */
     display: flex;
 
     margin: 2rem;
 }
 
-.imageItem {}
+.imageItemContainer:hover {
+    box-shadow: 0 0 1px 1px #5edbc5;
+}
+
+.imageItem {
+    height: 216px;
+    width: 100%;
+    max-width: 384px;
+    position: absolute;
+
+    border-radius: 0.4rem;
+    overflow: hidden;
+
+    -o-object-fit: contain;
+
+    object-fit: contain;
+}
 
 @media (max-width: 700px) {
     .container {
