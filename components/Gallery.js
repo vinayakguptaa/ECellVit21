@@ -42,11 +42,10 @@ export default function Gallery() {
                 <Image
                   src={src}
                   onClick={() => openImageViewer(index)}
-                  // width="384px"
-                  // height="216px"
                   key={index}
                   alt=""
                   layout="fill"
+                  loading="eager"
                 />
               </div>
             </div>
