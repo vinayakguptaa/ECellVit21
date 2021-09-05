@@ -13,8 +13,8 @@ import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  const [title, setTitle] = useState("ENTREPRENEURSHIP CELL VIT");
-  const [navActive, setNavActive] = useState(true);
+  const [title, setTitle] = useState("E-CELL");
+  const [navActive, setNavActive] = useState(false);
 
   useEffect(() => {
     addEventListener("resize", () => {

@@ -16,6 +16,12 @@ body {
 
   background: linear-gradient(180deg, #182424 0%, #273232 52.08%, #092727 100%);
 
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 
 a {

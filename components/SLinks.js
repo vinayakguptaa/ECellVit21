@@ -12,41 +12,49 @@ export default function SLink() {
   return (
     <>
       <div className={landingStyles.slinkLinksContainer}>
-        <div className={landingStyles.slinkLink}>
-          <a
-            href="https://www.facebook.com/ecellvit"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image src={facebook} alt="facebook" loading="eager" />
-          </a>
+        <div className={landingStyles.slinkChild}>
+          <div className={landingStyles.slinkLink}>
+            <a
+              href="https://www.facebook.com/ecellvit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={facebook} alt="facebook" loading="eager" />
+            </a>
+          </div>
         </div>
-        <div className={landingStyles.slinkLink}>
-          <a
-            href="https://www.instagram.com/ecell_vit"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image src={instagram} alt="instagram" loading="eager" />
-          </a>
+        <div className={landingStyles.slinkChild}>
+          <div className={landingStyles.slinkLink}>
+            <a
+              href="https://www.instagram.com/ecell_vit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={instagram} alt="instagram" loading="eager" />
+            </a>
+          </div>
         </div>
-        <div className={landingStyles.slinkLink}>
-          <a
-            href="https://www.linkedin.com/company/ecellvitvellore"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image src={linkedin} alt="linkedin" loading="eager" />
-          </a>
+        <div className={landingStyles.slinkChild}>
+          <div className={landingStyles.slinkLink}>
+            <a
+              href="https://www.linkedin.com/company/ecellvitvellore"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={linkedin} alt="linkedin" loading="eager" />
+            </a>
+          </div>
         </div>
-        <div className={landingStyles.slinkLink}>
-          <a
-            href="https://twitter.com/ecell_vit"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image src={twitter} alt="twitter" loading="eager" />
-          </a>
+        <div className={landingStyles.slinkChild}>
+          <div className={landingStyles.slinkLink}>
+            <a
+              href="https://twitter.com/ecell_vit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={twitter} alt="twitter" loading="eager" />
+            </a>
+          </div>
         </div>
       </div>
     </>
