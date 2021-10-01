@@ -184,7 +184,7 @@ export default function Team() {
           offset={false}
           order={order.two}
           instagram="https://www.instagram.com/yashraj_singh_29/"
-          linkedin="https://www.linkedin.com/in/yashraj-singh-973374187/"
+          linkedin="https://www.linkedin.com/in/yashraj-singh7781/"
         />
 
         <Board
